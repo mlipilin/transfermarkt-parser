@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node build/index.js",
     "test": "jest"
   },
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.1.5",
+    "@types/node": "^10.5.2",
     "jest": "^23.4.0",
     "ts-jest": "^23.0.0",
     "typescript": "^2.9.2"
