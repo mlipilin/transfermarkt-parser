@@ -1,6 +1,6 @@
-import { list } from './api/country';
+import { list } from './api/competition';
 
-list()
+list(189)
     .then(response => {
         console.log('response', response);
     })

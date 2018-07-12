@@ -3,10 +3,10 @@ import { JSDOM } from 'jsdom';
 
 import { iCountry } from './interface';
 
-import { countryListUrl } from '../../url';
+import url from '../../url';
 
 export function list (): Promise<Array<iCountry>> {
-    return axios.get(countryListUrl())
+    return axios.get(url.countryList())
         .then(response => {
             const dom = new JSDOM(response.data);
 
