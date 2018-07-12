@@ -1,4 +1,4 @@
 export interface iCompetition {
-    id: number,
+    id: string,
     title: string,
 }

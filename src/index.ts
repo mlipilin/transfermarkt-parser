@@ -1,6 +1,6 @@
 import { list } from './api/competition';
 
-list(189)
+list(50)
     .then(response => {
         console.log('response', response);
     })
