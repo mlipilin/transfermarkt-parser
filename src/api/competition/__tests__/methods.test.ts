@@ -4,26 +4,26 @@ describe('src/api/competition/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for England (id=189)', async () => {
             const response = [
-                { id: 'GB1', title: 'Premier League' },
-                { id: 'GB2', title: 'Championship' },
-                { id: 'GB3', title: 'League One' },
-                { id: 'GB4', title: 'League Two' },
-                { id: 'CNAT', title: 'National League' },
-                { id: 'GB21', title: 'Premier League 2' },
-                { id: 'GB18', title: 'U18 Premier League' },
-                { id: 'CGB', title: 'EFL Cup' },
-                { id: 'GBCS', title: 'Community Shield' },
+                { countryId: 189, id: 'GB1', title: 'Premier League' },
+                { countryId: 189, id: 'GB2', title: 'Championship' },
+                { countryId: 189, id: 'GB3', title: 'League One' },
+                { countryId: 189, id: 'GB4', title: 'League Two' },
+                { countryId: 189, id: 'CNAT', title: 'National League' },
+                { countryId: 189, id: 'GB21', title: 'Premier League 2' },
+                { countryId: 189, id: 'GB18', title: 'U18 Premier League' },
+                { countryId: 189, id: 'CGB', title: 'EFL Cup' },
+                { countryId: 189, id: 'GBCS', title: 'Community Shield' },
             ];
             await expect(list(189)).resolves.toEqual(response);
         });
         it('Should return correct result for France (id=50)', async () => {
             const response = [
-                { id: 'FR1', title: 'Ligue 1' },
-                { id: 'FR2', title: 'Ligue 2' },
-                { id: 'FR3', title: 'Championnat National' },
-                { id: 'FRC', title: 'Coupe de France' },
-                { id: 'FRCH', title: 'Trophée des Champions' },
-                { id: 'FRL', title: 'Coupe de la Ligue' },
+                { countryId: 50, id: 'FR1', title: 'Ligue 1' },
+                { countryId: 50, id: 'FR2', title: 'Ligue 2' },
+                { countryId: 50, id: 'FR3', title: 'Championnat National' },
+                { countryId: 50, id: 'FRC', title: 'Coupe de France' },
+                { countryId: 50, id: 'FRCH', title: 'Trophée des Champions' },
+                { countryId: 50, id: 'FRL', title: 'Coupe de la Ligue' },
             ];
             await expect(list(50)).resolves.toEqual(response);
         });

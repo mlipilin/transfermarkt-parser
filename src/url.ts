@@ -1,9 +1,11 @@
 import { BASE_HOST } from './settings';
 
-const countryList = () => `${BASE_HOST}/site/dropDownLaender`;
 const competitionList = () => `${BASE_HOST}/site/DropDownWettbewerbe`;
+const countryList = () => `${BASE_HOST}/site/dropDownLaender`;
+const seasonList = competitionId => `${BASE_HOST}/xxx/startseite/wettbewerb/${competitionId}`;
 
 export default {
-    countryList,
     competitionList,
+    countryList,
+    seasonList,
 }
