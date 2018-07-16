@@ -1,6 +1,6 @@
-import { list } from './api/season';
+import { list } from './api/matchday';
 
-list('L1')
+list('GB1', '2018')
     .then(response => {
         console.log('response', response);
     })
