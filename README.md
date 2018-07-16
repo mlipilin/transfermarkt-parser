@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mlipilin/transfermarkt-api.svg?branch=master)](https://travis-ci.org/mlipilin/transfermarkt-api)
+
 Transfermarkt API JavaScript
 ============================
 
