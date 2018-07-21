@@ -11,6 +11,7 @@ describe('src/api/competition/methods.ts', () => {
                 { countryId: 189, id: 'CNAT', title: 'National League' },
                 { countryId: 189, id: 'GB21', title: 'Premier League 2' },
                 { countryId: 189, id: 'GB18', title: 'U18 Premier League' },
+                { countryId: 189, id: 'GBFL', title: 'EFL Trophy'},
                 { countryId: 189, id: 'CGB', title: 'EFL Cup' },
                 { countryId: 189, id: 'GBCS', title: 'Community Shield' },
             ];
