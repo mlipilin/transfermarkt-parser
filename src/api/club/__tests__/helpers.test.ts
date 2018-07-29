@@ -1,9 +1,9 @@
-import { getLogoUrl } from '../helpers';
+import { getImageUrl } from '../helpers';
 
 describe('src/api/club/helpers.ts', () => {
-    describe('getLogoUrl', () => {
+    describe('getImageUrl', () => {
         it('Should return a correct result', () => {
-            expect(getLogoUrl(1)).toBe('https://tmssl.akamaized.net//images/wappen/head/1.png');
+            expect(getImageUrl(1)).toBe('https://tmssl.akamaized.net//images/wappen/head/1.png');
         });
     });
 });

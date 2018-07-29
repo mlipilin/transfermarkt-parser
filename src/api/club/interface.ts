@@ -1,5 +1,5 @@
 export interface iClub {
     id: number,
-    logoUrl: string,
+    imageUrl: string,
     title: string,
 }
