@@ -7,7 +7,7 @@ import url from '../../url';
 
 export function list (countryId: number): Promise<Array<iCompetition>> {
     return axios({
-        url: url.competitionList(),
+        url: url.competition.list(),
         method: 'post',
         headers: {
             'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',

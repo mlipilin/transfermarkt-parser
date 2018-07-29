@@ -6,7 +6,7 @@ import { iMatchday } from './interface';
 import url from '../../url';
 
 export function list (competitionId: string, seasonId: string): Promise<Array<iMatchday>> {
-    return axios.get(url.matchdayList(competitionId, seasonId))
+    return axios.get(url.matchday.list(competitionId, seasonId))
         .then(response => {
             const dom = new JSDOM(response.data);
 

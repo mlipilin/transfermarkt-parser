@@ -7,7 +7,7 @@ import { getImageUrl } from './helpers';
 import url from '../../url';
 
 export function list (competitionId, seasonId): Promise<Array<iClub>> {
-    return axios.get(url.clubList(competitionId, seasonId))
+    return axios.get(url.club.list(competitionId, seasonId))
         .then(response => {
             const dom = new JSDOM(response.data);
 

@@ -6,7 +6,7 @@ import { iCountry } from './interface';
 import url from '../../url';
 
 export function list (): Promise<Array<iCountry>> {
-    return axios.get(url.countryList())
+    return axios.get(url.country.list())
         .then(response => {
             const dom = new JSDOM(response.data);
 

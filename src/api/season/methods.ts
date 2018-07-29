@@ -6,7 +6,7 @@ import { iSeason } from './interface';
 import url from '../../url';
 
 export function list (competitionId: string): Promise<Array<iSeason>> {
-    return axios.get(url.seasonList(competitionId))
+    return axios.get(url.season.list(competitionId))
         .then(response => {
             const dom = new JSDOM(response.data);
 
