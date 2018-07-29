@@ -1,6 +1,6 @@
-import { list } from './api/club';
+import { list } from './api/competition';
 
-list('GB1', '2017')
+list(189)
     .then(response => {
         console.log('response', response);
     })

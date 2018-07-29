@@ -2,7 +2,6 @@ import axios from 'axios';
 import { JSDOM } from 'jsdom';
 
 import { iClub } from './interface';
-import { getImageUrl } from './helpers';
 
 import url from '../../url';
 
@@ -19,7 +18,7 @@ export function list (competitionId, seasonId): Promise<Array<iClub>> {
 
                     return {
                         id,
-                        imageUrl: getImageUrl(id),
+                        logoUrl: url.club.logo(id),
                         title: linkNode.innerHTML,
                     };
                 });

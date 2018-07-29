@@ -6,102 +6,102 @@ describe('src/api/club/methods.ts', () => {
             const response = [
                 {
                     id: 985,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/985.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/985.png',
                     title: 'Manchester United',
                 },
                 {
                     id: 631,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/631.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/631.png',
                     title: 'Chelsea FC',
                 },
                 {
                     id: 11,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/11.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/11.png',
                     title: 'Arsenal FC',
                 },
                 {
                     id: 281,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/281.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/281.png',
                     title: 'Manchester City',
                 },
                 {
                     id: 148,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/148.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/148.png',
                     title: 'Tottenham Hotspur',
                 },
                 {
                     id: 31,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/31.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/31.png',
                     title: 'Liverpool FC',
                 },
                 {
                     id: 29,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/29.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/29.png',
                     title: 'Everton FC',
                 },
                 {
                     id: 379,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/379.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/379.png',
                     title: 'West Ham United',
                 },
                 {
                     id: 1003,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/1003.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/1003.png',
                     title: 'Leicester City',
                 },
                 {
                     id: 180,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/180.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/180.png',
                     title: 'Southampton FC',
                 },
                 {
                     id: 873,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/873.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/873.png',
                     title: 'Crystal Palace',
                 },
                 {
                     id: 512,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/512.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/512.png',
                     title: 'Stoke City',
                 },
                 {
                     id: 2288,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/2288.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/2288.png',
                     title: 'Swansea City',
                 },
                 {
                     id: 1010,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/1010.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/1010.png',
                     title: 'Watford FC',
                 },
                 {
                     id: 762,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/762.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/762.png',
                     title: 'Newcastle United',
                 },
                 {
                     id: 984,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/984.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/984.png',
                     title: 'West Bromwich Albion',
                 },
                 {
                     id: 989,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/989.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/989.png',
                     title: 'AFC Bournemouth',
                 },
                 {
                     id: 1237,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/1237.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/1237.png',
                     title: 'Brighton &amp; Hove Albion',
                 },
                 {
                     id: 1132,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/1132.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/1132.png',
                     title: 'Burnley FC',
                 },
                 {
                     id: 1110,
-                    imageUrl: 'https://tmssl.akamaized.net//images/wappen/head/1110.png',
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/1110.png',
                     title: 'Huddersfield Town',
                 }
             ];

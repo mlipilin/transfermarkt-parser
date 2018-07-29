@@ -4,27 +4,107 @@ describe('src/api/competition/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for England (id=189)', async () => {
             const response = [
-                { countryId: 189, id: 'GB1', title: 'Premier League' },
-                { countryId: 189, id: 'GB2', title: 'Championship' },
-                { countryId: 189, id: 'GB3', title: 'League One' },
-                { countryId: 189, id: 'GB4', title: 'League Two' },
-                { countryId: 189, id: 'CNAT', title: 'National League' },
-                { countryId: 189, id: 'GB21', title: 'Premier League 2' },
-                { countryId: 189, id: 'GB18', title: 'U18 Premier League' },
-                { countryId: 189, id: 'GBFL', title: 'EFL Trophy'},
-                { countryId: 189, id: 'CGB', title: 'EFL Cup' },
-                { countryId: 189, id: 'GBCS', title: 'Community Shield' },
+                {
+                    countryId: 189,
+                    id: 'GB1',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gb1.png',
+                    title: 'Premier League',
+                },
+                {
+                    countryId: 189,
+                    id: 'GB2',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gb2.png',
+                    title: 'Championship',
+                },
+                {
+                    countryId: 189,
+                    id: 'GB3',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gb3.png',
+                    title: 'League One',
+                },
+                {
+                    countryId: 189,
+                    id: 'GB4',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gb4.png',
+                    title: 'League Two',
+                },
+                {
+                    countryId: 189,
+                    id: 'CNAT',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/cnat.png',
+                    title: 'National League',
+                },
+                {
+                    countryId: 189,
+                    id: 'GB21',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gb21.png',
+                    title: 'Premier League 2',
+                },
+                {
+                    countryId: 189,
+                    id: 'GB18',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gb18.png',
+                    title: 'U18 Premier League',
+                },
+                {
+                    countryId: 189,
+                    id: 'GBFL',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gbfl.png',
+                    title: 'EFL Trophy',
+                },
+                {
+                    countryId: 189,
+                    id: 'CGB',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/cgb.png',
+                    title: 'EFL Cup',
+                },
+                {
+                    countryId: 189,
+                    id: 'GBCS',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gbcs.png',
+                    title: 'Community Shield',
+                },
             ];
             await expect(list(189)).resolves.toEqual(response);
         });
         it('Should return correct result for France (id=50)', async () => {
             const response = [
-                { countryId: 50, id: 'FR1', title: 'Ligue 1' },
-                { countryId: 50, id: 'FR2', title: 'Ligue 2' },
-                { countryId: 50, id: 'FR3', title: 'Championnat National' },
-                { countryId: 50, id: 'FRC', title: 'Coupe de France' },
-                { countryId: 50, id: 'FRCH', title: 'Trophée des Champions' },
-                { countryId: 50, id: 'FRL', title: 'Coupe de la Ligue' },
+                {
+                    countryId: 50,
+                    id: 'FR1',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/fr1.png',
+                    title: 'Ligue 1',
+                },
+                {
+                    countryId: 50,
+                    id: 'FR2',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/fr2.png',
+                    title: 'Ligue 2',
+                },
+                {
+                    countryId: 50,
+                    id: 'FR3',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/fr3.png',
+                    title: 'Championnat National',
+                },
+                {
+                    countryId: 50,
+                    id: 'FRC',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/frc.png',
+                    title: 'Coupe de France',
+                },
+                {
+                    countryId: 50,
+                    id: 'FRCH',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/frch.png',
+                    title: 'Trophée des Champions',
+                },
+                {
+                    countryId: 50,
+                    id: 'FRL',
+                    logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/frl.png',
+                    title: 'Coupe de la Ligue',
+                },
             ];
             await expect(list(50)).resolves.toEqual(response);
         });

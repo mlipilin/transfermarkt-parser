@@ -19,10 +19,15 @@ export function list (countryId: number): Promise<Array<iCompetition>> {
 
             return [...dom.window.document.querySelectorAll('option')]
                 .filter(node => !!node.getAttribute('value'))
-                .map(node => ({
-                    countryId,
-                    id: node.getAttribute('value'),
-                    title: node.innerHTML,
-                }));
+                .map(node => {
+                    const id = node.getAttribute('value');
+
+                    return {
+                        countryId,
+                        id,
+                        logoUrl: url.competition.logo(id),
+                        title: node.innerHTML,
+                    };
+                });
         });
 }

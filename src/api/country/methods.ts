@@ -12,9 +12,14 @@ export function list (): Promise<Array<iCountry>> {
 
             return [...dom.window.document.querySelectorAll('option')]
                 .filter(node => !!parseInt(node.getAttribute('value')))
-                .map(node => ({
-                    id: parseInt(node.getAttribute('value')),
-                    title: node.innerHTML,
-                }));
+                .map(node => {
+                    const id = parseInt(node.getAttribute('value'));
+
+                    return {
+                        flagUrl: url.country.flag(id),
+                        id,
+                        title: node.innerHTML,
+                    };
+                });
         });
 }
