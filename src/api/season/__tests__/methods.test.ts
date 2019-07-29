@@ -4,6 +4,7 @@ describe('src/api/season/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for EPL (id=GB2)', async () => {
             const response = [
+                { competitionId: 'GB1', id: '2019', title: '19/20' },
                 { competitionId: 'GB1', id: '2018', title: '18/19' },
                 { competitionId: 'GB1', id: '2017', title: '17/18' },
                 { competitionId: 'GB1', id: '2016', title: '16/17' },
@@ -36,6 +37,7 @@ describe('src/api/season/methods.ts', () => {
         });
         it('Should return correct result for 1.Bundesliga (id=L1)', async () => {
             const response = [
+                { competitionId: 'L1', id: '2019', title: '19/20' },
                 { competitionId: 'L1', id: '2018', title: '18/19' },
                 { competitionId: 'L1', id: '2017', title: '17/18' },
                 { competitionId: 'L1', id: '2016', title: '16/17' },
