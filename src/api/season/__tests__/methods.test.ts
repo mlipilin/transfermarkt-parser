@@ -1,5 +1,7 @@
 import { list } from '../methods';
 
+import { JEST_ASYNC_TIMEOUT } from '../../../settings';
+
 describe('src/api/season/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for EPL (id=GB2)', async () => {
@@ -34,7 +36,7 @@ describe('src/api/season/methods.ts', () => {
                 { competitionId: 'GB1', id: '1992', title: '92/93' },
             ];
             await expect(list('GB1')).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
         it('Should return correct result for 1.Bundesliga (id=L1)', async () => {
             const response = [
                 { competitionId: 'L1', id: '2019', title: '19/20' },
@@ -96,6 +98,6 @@ describe('src/api/season/methods.ts', () => {
                 { competitionId: 'L1', id: '1963', title: '63/64' },
             ];
             await expect(list('L1')).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
     });
 })

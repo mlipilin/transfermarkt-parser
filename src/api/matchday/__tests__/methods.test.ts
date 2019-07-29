@@ -1,5 +1,7 @@
 import { list } from '../methods';
 
+import { JEST_ASYNC_TIMEOUT } from '../../../settings';
+
 describe('src/api/matchday/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for EPL, 17/18 (GB1, 2017)', async () => {
@@ -44,12 +46,12 @@ describe('src/api/matchday/methods.ts', () => {
                 { competitionId: 'GB1', id: 38, seasonId: '2017', title: '38.Matchday' },
             ];
             await expect(list('GB1', '2017')).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
         it('Should an empty array for too early year (GB1, 1900)', async () => {
             await expect(list('GB1', '1900')).resolves.toEqual([]);
-        });
+        }, JEST_ASYNC_TIMEOUT);
         it('Should an empty array for too late year (GB1, 2900)', async () => {
             await expect(list('GB1', '2900')).resolves.toEqual([]);
-        });
+        }, JEST_ASYNC_TIMEOUT);
     });
 })
