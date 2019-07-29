@@ -1,9 +1,8 @@
-import { list } from './api/competition';
+import * as club from './api/club';
+import * as competition from './api/competition';
+import * as country from './api/country';
+import * as matchday from './api/matchday';
+import * as season from './api/season';
 
-list(189)
-    .then(response => {
-        console.log('response', response);
-    })
-    .catch(error => {
-        console.log('error', error);
-    })
+export { club, competition, country, matchday, season }
+export default { club, competition, country, matchday, season }

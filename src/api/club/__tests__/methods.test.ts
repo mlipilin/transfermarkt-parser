@@ -1,5 +1,7 @@
 import { list } from '../methods';
 
+import { JEST_ASYNC_TIMEOUT } from '../../../settings';
+
 describe('src/api/club/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for EPL, 17/18 (GB1, 2017)', async () => {
@@ -106,6 +108,6 @@ describe('src/api/club/methods.ts', () => {
                 }
             ];
             await expect(list('GB1', '2017')).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
     });
 })

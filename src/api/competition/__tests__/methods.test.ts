@@ -1,5 +1,7 @@
 import { list } from '../methods';
 
+import { JEST_ASYNC_TIMEOUT } from '../../../settings';
+
 describe('src/api/competition/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result for England (id=189)', async () => {
@@ -40,7 +42,7 @@ describe('src/api/competition/methods.ts', () => {
                 "title": "EFL Trophy"
             }];
             await expect(list(189)).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
         it('Should return correct result for France (id=50)', async () => {
             const response = [
                 {
@@ -75,6 +77,6 @@ describe('src/api/competition/methods.ts', () => {
                 },
             ];
             await expect(list(50)).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
     });
 });

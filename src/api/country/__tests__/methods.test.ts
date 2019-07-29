@@ -1,5 +1,7 @@
 import { list } from '../methods';
 
+import { JEST_ASYNC_TIMEOUT } from '../../../settings';
+
 describe('src/api/country/methods.ts', () => {
     describe('list', () => {
         it('Should return correct result', async () => {
@@ -239,6 +241,6 @@ describe('src/api/country/methods.ts', () => {
                 { id: 187, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/187.png", title: "Zimbabwe", },
             ];
             await expect(list()).resolves.toEqual(response);
-        });
+        }, JEST_ASYNC_TIMEOUT);
     });
 });
