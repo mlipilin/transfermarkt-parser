@@ -1,23 +1,24 @@
 {
   "name": "transfermarkt-api",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node build/index.js",
+    "build": "tsc",
+    "start": "npm run build && node build/index.js",
     "test": "jest"
   },
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "jsdom": "^11.11.0"
+    "axios": "^0.19.0",
+    "jsdom": "^15.1.1"
   },
   "devDependencies": {
-    "@types/jest": "^23.1.5",
-    "@types/node": "^10.5.2",
-    "jest": "^23.4.0",
-    "ts-jest": "^23.0.0",
-    "typescript": "^2.9.2"
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
   }
 }

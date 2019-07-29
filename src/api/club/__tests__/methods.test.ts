@@ -5,14 +5,14 @@ describe('src/api/club/methods.ts', () => {
         it('Should return correct result for EPL, 17/18 (GB1, 2017)', async () => {
             const response = [
                 {
-                    id: 985,
-                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/985.png',
-                    title: 'Manchester United',
-                },
-                {
                     id: 631,
                     logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/631.png',
                     title: 'Chelsea FC',
+                },
+                {
+                    id: 985,
+                    logoUrl: 'https://tmssl.akamaized.net//images/wappen/head/985.png',
+                    title: 'Manchester United',
                 },
                 {
                     id: 11,
