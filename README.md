@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mlipilin/transfermarkt-api.svg?branch=master)](https://travis-ci.org/mlipilin/transfermarkt-api)
+[![CircleCI](https://circleci.com/gh/mlipilin/transfermarkt-parser/tree/master.svg?style=svg)](https://circleci.com/gh/mlipilin/transfermarkt-parser/tree/master)
 
 Transfermarkt API JavaScript
 ============================
