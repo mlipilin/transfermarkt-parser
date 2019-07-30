@@ -77,7 +77,7 @@ describe('src/api/country/methods.ts', () => {
                 { id: 162, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/162.png", "title": "Eswatini", },
                 { id: 11, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/11.png", title: "Ethiopia", },
                 { id: 250, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/250.png", title: "Falkland Islands", },
-                { id: 208, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/208.png", title: "Faroe Island", },
+                { id: 208, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/208.png", title: "Faroe Islands", },
                 { id: 111, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/111.png", title: "Federated States of Micronesia", },
                 { id: 48, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/48.png", title: "Fiji", },
                 { id: 49, flagUrl: "https://tmssl.akamaized.net//images/flagge/small/49.png", title: "Finland", },
