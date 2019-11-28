@@ -38,7 +38,7 @@ describe('src/api/player/methods.ts', () => {
                     {
                         id: 371021,
                         logoUrl: null,
-                        name: 'Arijanet Murić',
+                        name: 'Arijanet Muric',
                         birthday: '1998-11-07',
                         nationalities: ['Kosovo', 'Montenegro'],
                         number: 49,
@@ -180,15 +180,6 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Defensive Midfield'
                     },
                     {
-                        id: 261504,
-                        logoUrl: null,
-                        name: 'Aleix García',
-                        birthday: '1997-06-28',
-                        nationalities: ['Spain'],
-                        number: null,
-                        position: 'Defensive Midfield'
-                    },
-                    {
                         id: 114365,
                         logoUrl: null,
                         name: 'Luke Brattan',
@@ -243,6 +234,15 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Central Midfield'
                     },
                     {
+                        birthday: '1997-06-28',
+                        id: 261504,
+                        logoUrl: null,
+                        name: 'Aleix García',
+                        nationalities: ['Spain'],
+                        number: null,
+                        position: 'Central Midfield',
+                    },
+                    {
                         id: 103559,
                         logoUrl: null,
                         name: 'Mix Diskerud',
@@ -270,6 +270,15 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Central Midfield'
                     },
                     {
+                        birthday: '1999-10-07',
+                        id: 382553,
+                        logoUrl: null,
+                        name: 'Luke Bolton',
+                        nationalities: ['England'],
+                        number: null,
+                        position: 'Right Midfield',
+                    },
+                    {
                         id: 88755,
                         logoUrl: null,
                         name: 'Kevin De Bruyne',
@@ -285,6 +294,15 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1986-01-08',
                         nationalities: ['Spain'],
                         number: 21,
+                        position: 'Attacking Midfield'
+                    },
+                    {
+                        id: 314678,
+                        logoUrl: null,
+                        name: 'Brahim Díaz',
+                        birthday: '1999-08-03',
+                        nationalities: ['Spain', 'Morocco'],
+                        number: 55,
                         position: 'Attacking Midfield'
                     },
                     {
@@ -333,12 +351,12 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Left Winger'
                     },
                     {
-                        id: 314678,
+                        id: 417346,
                         logoUrl: null,
-                        name: 'Brahim Díaz',
-                        birthday: '1999-08-03',
-                        nationalities: ['Spain', 'Morocco'],
-                        number: 55,
+                        name: 'Jack Harrison',
+                        birthday: '1996-11-20',
+                        nationalities: ['England'],
+                        number: null,
                         position: 'Left Winger'
                     },
                     {
@@ -373,24 +391,6 @@ describe('src/api/player/methods.ts', () => {
                         logoUrl: null,
                         name: 'Patrick Roberts',
                         birthday: '1997-02-05',
-                        nationalities: ['England'],
-                        number: null,
-                        position: 'Right Winger'
-                    },
-                    {
-                        id: 417346,
-                        logoUrl: null,
-                        name: 'Jack Harrison',
-                        birthday: '1996-11-20',
-                        nationalities: ['England'],
-                        number: null,
-                        position: 'Right Winger'
-                    },
-                    {
-                        id: 382553,
-                        logoUrl: null,
-                        name: 'Luke Bolton',
-                        birthday: '1999-10-07',
                         nationalities: ['England'],
                         number: null,
                         position: 'Right Winger'
@@ -648,6 +648,15 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Left Winger'
                     },
                     {
+                        id: 428791,
+                        logoUrl: null,
+                        name: 'Paulinho',
+                        birthday: '2000-07-15',
+                        nationalities: ['Brazil'],
+                        number: 7,
+                        position: 'Left Winger'
+                    },
+                    {
                         id: 336002,
                         logoUrl: null,
                         name: 'Herdi Bukusu',
@@ -655,15 +664,6 @@ describe('src/api/player/methods.ts', () => {
                         nationalities: ['Germany', 'Angola'],
                         number: null,
                         position: 'Left Winger'
-                    },
-                    {
-                        id: 428791,
-                        logoUrl: null,
-                        name: 'Paulinho',
-                        birthday: '2000-07-15',
-                        nationalities: ['Brazil'],
-                        number: 7,
-                        position: 'Right Winger'
                     },
                     {
                         id: 61087,

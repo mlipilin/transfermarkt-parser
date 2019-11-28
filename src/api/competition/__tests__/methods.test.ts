@@ -32,14 +32,29 @@ describe('src/api/competition/methods.ts', () => {
                 "title": "National League"
             }, {
                 "countryId": 189,
+                "id": "GB18",
+                "logoUrl": "https://tmssl.akamaized.net//images/logo/normal/gb18.png",
+                "title": "U18 Premier League"
+            }, {
+                "countryId": 189,
                 "id": "GB21",
                 "logoUrl": "https://tmssl.akamaized.net//images/logo/normal/gb21.png",
                 "title": "Premier League 2"
             }, {
                 "countryId": 189,
+                "id": "FAC",
+                "logoUrl": "https://tmssl.akamaized.net//images/logo/normal/fac.png",
+                "title": "FA Cup"
+            }, {
+                "countryId": 189,
                 "id": "CGB",
                 "logoUrl": "https://tmssl.akamaized.net//images/logo/normal/cgb.png",
                 "title": "EFL Cup"
+            }, {
+                "countryId": 189,
+                "id": "GBCS",
+                "logoUrl": "https://tmssl.akamaized.net//images/logo/normal/gbcs.png",
+                "title": "Community Shield"
             }, {
                 "countryId": 189,
                 "id": "GBFL",
