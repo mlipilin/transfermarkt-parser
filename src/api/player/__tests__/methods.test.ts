@@ -15,7 +15,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1993-08-17',
                         nationalities: ['Brazil', 'Portugal'],
                         number: 31,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 40423,
@@ -24,7 +24,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1983-04-13',
                         nationalities: ['Chile', 'Spain'],
                         number: 1,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 339253,
@@ -33,7 +33,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1998-01-16',
                         nationalities: ['England'],
                         number: 32,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 371021,
@@ -42,7 +42,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1998-11-07',
                         nationalities: ['Kosovo', 'Montenegro'],
                         number: 49,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 186590,
@@ -51,7 +51,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-05-28',
                         nationalities: ['England'],
                         number: 5,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 176553,
@@ -60,7 +60,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-05-27',
                         nationalities: ['France'],
                         number: 14,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 54781,
@@ -69,7 +69,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1988-02-12',
                         nationalities: ['Argentina'],
                         number: 30,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 90681,
@@ -78,7 +78,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1991-02-13',
                         nationalities: ['France', 'Belgium'],
                         number: 15,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 9594,
@@ -87,7 +87,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1986-04-10',
                         nationalities: ['Belgium', 'DR Congo'],
                         number: 4,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 340460,
@@ -96,7 +96,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-02-10',
                         nationalities: ['Netherlands'],
                         number: 34,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 210178,
@@ -105,7 +105,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1993-08-31',
                         nationalities: ['Spain'],
                         number: null,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 282199,
@@ -114,7 +114,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-04-24',
                         nationalities: ['United States'],
                         number: null,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 277723,
@@ -123,7 +123,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1998-08-22',
                         nationalities: ['England'],
                         number: null,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 466794,
@@ -132,7 +132,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2001-01-09',
                         nationalities: ['Spain'],
                         number: 50,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 157495,
@@ -141,7 +141,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-07-17',
                         nationalities: ['France', 'Senegal'],
                         number: 22,
-                        position: 'Left-Back'
+                        position: 'Left-Back',
                     },
                     {
                         id: 203853,
@@ -150,7 +150,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1996-12-15',
                         nationalities: ['Ukraine'],
                         number: 35,
-                        position: 'Left-Back'
+                        position: 'Left-Back',
                     },
                     {
                         id: 95424,
@@ -159,7 +159,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1990-05-28',
                         nationalities: ['England'],
                         number: 2,
-                        position: 'Right-Back'
+                        position: 'Right-Back',
                     },
                     {
                         id: 145707,
@@ -168,7 +168,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1991-07-15',
                         nationalities: ['Brazil'],
                         number: 3,
-                        position: 'Right-Back'
+                        position: 'Right-Back',
                     },
                     {
                         id: 26267,
@@ -177,7 +177,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1985-05-04',
                         nationalities: ['Brazil'],
                         number: 25,
-                        position: 'Defensive Midfield'
+                        position: 'Defensive Midfield',
                     },
                     {
                         id: 114365,
@@ -186,7 +186,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1990-03-08',
                         nationalities: ['Australia', 'England'],
                         number: null,
-                        position: 'Defensive Midfield'
+                        position: 'Defensive Midfield',
                     },
                     {
                         id: 395239,
@@ -195,7 +195,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-07-23',
                         nationalities: ['France', 'Guinea-Bissau'],
                         number: 81,
-                        position: 'Defensive Midfield'
+                        position: 'Defensive Midfield',
                     },
                     {
                         id: 53622,
@@ -204,7 +204,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1990-10-24',
                         nationalities: ['Germany'],
                         number: 8,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 50362,
@@ -213,7 +213,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1989-11-21',
                         nationalities: ['England', 'Guyana'],
                         number: 18,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 406635,
@@ -222,7 +222,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-05-28',
                         nationalities: ['England'],
                         number: 47,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 447661,
@@ -231,7 +231,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1998-05-09',
                         nationalities: ['Brazil'],
                         number: null,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         birthday: '1997-06-28',
@@ -249,7 +249,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1990-10-02',
                         nationalities: ['United States', 'Norway'],
                         number: null,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 226739,
@@ -258,7 +258,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1992-09-29',
                         nationalities: ['Australia', 'Uruguay'],
                         number: null,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 484551,
@@ -267,7 +267,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-12-04',
                         nationalities: ['England'],
                         number: null,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         birthday: '1999-10-07',
@@ -285,7 +285,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1991-06-28',
                         nationalities: ['Belgium'],
                         number: 17,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 35518,
@@ -294,7 +294,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1986-01-08',
                         nationalities: ['Spain'],
                         number: 21,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 314678,
@@ -303,7 +303,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1999-08-03',
                         nationalities: ['Spain', 'Morocco'],
                         number: 55,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 429790,
@@ -312,7 +312,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1999-07-02',
                         nationalities: ['Serbia'],
                         number: null,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 406640,
@@ -321,7 +321,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-10-10',
                         nationalities: ['England', 'Germany'],
                         number: 61,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 466802,
@@ -330,7 +330,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2001-05-26',
                         nationalities: ['Spain'],
                         number: 82,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 134425,
@@ -339,7 +339,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-12-08',
                         nationalities: ['England', 'Jamaica'],
                         number: 7,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 192565,
@@ -348,7 +348,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1996-01-11',
                         nationalities: ['Germany', 'France'],
                         number: 19,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 417346,
@@ -357,7 +357,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1996-11-20',
                         nationalities: ['England'],
                         number: null,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 345654,
@@ -366,7 +366,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1996-09-20',
                         nationalities: ['Colombia'],
                         number: null,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 241641,
@@ -375,7 +375,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-08-10',
                         nationalities: ['Portugal'],
                         number: 20,
-                        position: 'Right Winger'
+                        position: 'Right Winger',
                     },
                     {
                         id: 171424,
@@ -384,7 +384,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1991-02-21',
                         nationalities: ['Algeria', 'France'],
                         number: 26,
-                        position: 'Right Winger'
+                        position: 'Right Winger',
                     },
                     {
                         id: 225452,
@@ -393,7 +393,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-02-05',
                         nationalities: ['England'],
                         number: null,
-                        position: 'Right Winger'
+                        position: 'Right Winger',
                     },
                     {
                         id: 392763,
@@ -402,7 +402,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-02-09',
                         nationalities: ['England', 'Colombia'],
                         number: 83,
-                        position: 'Right Winger'
+                        position: 'Right Winger',
                     },
                     {
                         id: 26399,
@@ -411,7 +411,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1988-06-02',
                         nationalities: ['Argentina', 'Spain'],
                         number: 10,
-                        position: 'Centre-Forward'
+                        position: 'Centre-Forward',
                     },
                     {
                         id: 363205,
@@ -420,12 +420,12 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-04-03',
                         nationalities: ['Brazil'],
                         number: 33,
-                        position: 'Centre-Forward'
-                    }
+                        position: 'Centre-Forward',
+                    },
                 ];
                 await expect(list('281', '2018')).resolves.toEqual(response);
             },
-            JEST_ASYNC_TIMEOUT
+            JEST_ASYNC_TIMEOUT,
         );
         it(
             'Should return correct result for Bayer 04 Leverkusen, 17/18 (15, 2018)',
@@ -438,7 +438,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1989-11-24',
                         nationalities: ['Finland', 'Slovakia'],
                         number: 1,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 16498,
@@ -447,7 +447,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1984-06-28',
                         nationalities: ['Austria'],
                         number: 28,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 38346,
@@ -456,7 +456,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1987-04-20',
                         nationalities: ['Germany'],
                         number: 24,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 85543,
@@ -465,7 +465,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1993-07-28',
                         nationalities: ['Germany'],
                         number: 36,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 320954,
@@ -474,16 +474,16 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1999-07-06',
                         nationalities: ['Poland'],
                         number: null,
-                        position: 'Goalkeeper'
+                        position: 'Goalkeeper',
                     },
                     {
                         id: 196357,
                         logoUrl: null,
                         name: 'Jonathan Tah',
                         birthday: '1996-02-11',
-                        nationalities: ['Germany', 'Cote d\'Ivoire'],
+                        nationalities: ['Germany', "Cote d'Ivoire"],
                         number: 4,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 324351,
@@ -492,7 +492,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1998-08-09',
                         nationalities: ['Greece'],
                         number: 3,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 29993,
@@ -501,7 +501,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1989-04-27',
                         nationalities: ['Germany'],
                         number: 5,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 59032,
@@ -510,7 +510,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1991-03-06',
                         nationalities: ['Austria', 'Serbia'],
                         number: 6,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 206386,
@@ -519,7 +519,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1995-11-28',
                         nationalities: ['Croatia'],
                         number: 16,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 389079,
@@ -528,7 +528,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-03-14',
                         nationalities: ['Germany'],
                         number: 33,
-                        position: 'Centre-Back'
+                        position: 'Centre-Back',
                     },
                     {
                         id: 228433,
@@ -537,7 +537,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1993-07-20',
                         nationalities: ['Brazil'],
                         number: 18,
-                        position: 'Left-Back'
+                        position: 'Left-Back',
                     },
                     {
                         id: 202591,
@@ -546,7 +546,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-02-23',
                         nationalities: ['Germany', 'Ghana'],
                         number: null,
-                        position: 'Right-Back'
+                        position: 'Right-Back',
                     },
                     {
                         id: 119211,
@@ -555,7 +555,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-04-21',
                         nationalities: ['Germany'],
                         number: 23,
-                        position: 'Right-Back'
+                        position: 'Right-Back',
                     },
                     {
                         id: 346328,
@@ -564,7 +564,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1999-01-02',
                         nationalities: ['Poland', 'Germany'],
                         number: null,
-                        position: 'Right-Back'
+                        position: 'Right-Back',
                     },
                     {
                         id: 30059,
@@ -573,7 +573,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1989-04-27',
                         nationalities: ['Germany'],
                         number: 8,
-                        position: 'Defensive Midfield'
+                        position: 'Defensive Midfield',
                     },
                     {
                         id: 34787,
@@ -582,7 +582,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1988-01-02',
                         nationalities: ['Austria'],
                         number: 15,
-                        position: 'Defensive Midfield'
+                        position: 'Defensive Midfield',
                     },
                     {
                         id: 389078,
@@ -591,7 +591,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-02-22',
                         nationalities: ['Poland', 'Germany'],
                         number: null,
-                        position: 'Defensive Midfield'
+                        position: 'Defensive Midfield',
                     },
                     {
                         id: 89701,
@@ -600,7 +600,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1989-04-17',
                         nationalities: ['Chile'],
                         number: 20,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 118847,
@@ -609,7 +609,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-01-31',
                         nationalities: ['Germany'],
                         number: 21,
-                        position: 'Central Midfield'
+                        position: 'Central Midfield',
                     },
                     {
                         id: 309400,
@@ -618,7 +618,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1999-06-11',
                         nationalities: ['Germany'],
                         number: 29,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 335100,
@@ -627,7 +627,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1999-01-29',
                         nationalities: ['Germany'],
                         number: 30,
-                        position: 'Attacking Midfield'
+                        position: 'Attacking Midfield',
                     },
                     {
                         id: 387626,
@@ -636,7 +636,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-08-09',
                         nationalities: ['Jamaica'],
                         number: 9,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 187492,
@@ -645,7 +645,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1996-05-02',
                         nationalities: ['Germany'],
                         number: 10,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 428791,
@@ -654,7 +654,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-07-15',
                         nationalities: ['Brazil'],
                         number: 7,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 336002,
@@ -663,7 +663,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '2000-04-03',
                         nationalities: ['Germany', 'Angola'],
                         number: null,
-                        position: 'Left Winger'
+                        position: 'Left Winger',
                     },
                     {
                         id: 61087,
@@ -672,7 +672,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1990-04-08',
                         nationalities: ['Germany', 'Morocco'],
                         number: 38,
-                        position: 'Right Winger'
+                        position: 'Right Winger',
                     },
                     {
                         id: 82009,
@@ -681,7 +681,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1992-07-30',
                         nationalities: ['Germany'],
                         number: 31,
-                        position: 'Centre-Forward'
+                        position: 'Centre-Forward',
                     },
                     {
                         id: 193782,
@@ -690,7 +690,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1992-10-08',
                         nationalities: ['Argentina', 'Italy'],
                         number: 13,
-                        position: 'Centre-Forward'
+                        position: 'Centre-Forward',
                     },
                     {
                         id: 201311,
@@ -699,7 +699,7 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1992-06-24',
                         nationalities: ['Sweden', 'DR Congo'],
                         number: null,
-                        position: 'Centre-Forward'
+                        position: 'Centre-Forward',
                     },
                     {
                         id: 173491,
@@ -708,12 +708,12 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1994-09-13',
                         nationalities: ['Finland'],
                         number: 17,
-                        position: 'Centre-Forward'
-                    }
+                        position: 'Centre-Forward',
+                    },
                 ];
                 await expect(list('15', '2018')).resolves.toEqual(response);
             },
-            JEST_ASYNC_TIMEOUT
+            JEST_ASYNC_TIMEOUT,
         );
     });
 });

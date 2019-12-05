@@ -1,32 +1,52 @@
 {
-  "name": "transfermarkt-api",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node build/dev.js",
-    "test": "jest"
-  },
-  "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "jsdom": "^15.1.1",
-    "moment": "^2.24.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.15",
-    "@types/node": "^12.6.8",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.5.3"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "<rootDir>/build/",
-      "<rootDir>/node_modules/",
-      "<rootDir>/application/"
-    ]
-  }
+    "name": "transfermarkt-parser",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint --fix . && echo Lint complete.",
+        "start": "npm run build && node build/dev.js",
+        "test": "jest"
+    },
+    "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "jsdom": "^15.1.1",
+        "moment": "^2.24.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.15",
+        "@types/node": "^12.6.8",
+        "@typescript-eslint/eslint-plugin": "^2.9.0",
+        "@typescript-eslint/parser": "^2.9.0",
+        "eslint": "^6.7.1",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "husky": "^3.1.0",
+        "jest": "^24.8.0",
+        "lint-staged": "^9.5.0",
+        "prettier": "^1.19.1",
+        "ts-jest": "^24.0.2",
+        "typescript": "^3.5.3"
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "<rootDir>/build/",
+            "<rootDir>/node_modules/",
+            "<rootDir>/application/"
+        ]
+    },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
 }
