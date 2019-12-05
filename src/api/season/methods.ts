@@ -5,18 +5,16 @@ import { iSeason } from './interface';
 
 import url from '../../url';
 
-export function list (competitionId: string): Promise<Array<iSeason>> {
-    return axios.get(url.season.list(competitionId))
-        .then(response => {
-            const dom = new JSDOM(response.data);
+export function list(competitionId: string): Promise<Array<iSeason>> {
+    return axios.get(url.season.list(competitionId)).then(response => {
+        const dom = new JSDOM(response.data);
 
-            return [...dom.window.document.querySelectorAll('select[name=saison_id] option')]
-                .filter(node => node.getAttribute('value'))
-                .map(node => ({
-                    competitionId,
-                    id: node.getAttribute('value'),
-                    title: node.innerHTML,
-                }));
-
-        })
+        return [...dom.window.document.querySelectorAll('select[name=saison_id] option')]
+            .filter(node => node.getAttribute('value'))
+            .map(node => ({
+                competitionId,
+                id: node.getAttribute('value'),
+                title: node.innerHTML,
+            }));
+    });
 }

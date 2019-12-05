@@ -1,5 +1,5 @@
 export interface iSeason {
-    competitionId: string,
-    id: string,
-    title: string,
+    competitionId: string;
+    id: string;
+    title: string;
 }
