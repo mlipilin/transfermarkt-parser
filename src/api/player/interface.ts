@@ -1,4 +1,4 @@
-export interface iPlayer {
+export interface Player {
     birthday: string;
     id: number;
     logoUrl: string;

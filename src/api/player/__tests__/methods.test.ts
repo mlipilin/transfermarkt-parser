@@ -612,6 +612,15 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Central Midfield',
                     },
                     {
+                        id: 187492,
+                        logoUrl: null,
+                        name: 'Julian Brandt',
+                        birthday: '1996-05-02',
+                        nationalities: ['Germany'],
+                        number: 10,
+                        position: 'Attacking Midfield',
+                    },
+                    {
                         id: 309400,
                         logoUrl: null,
                         name: 'Kai Havertz',
@@ -636,15 +645,6 @@ describe('src/api/player/methods.ts', () => {
                         birthday: '1997-08-09',
                         nationalities: ['Jamaica'],
                         number: 9,
-                        position: 'Left Winger',
-                    },
-                    {
-                        id: 187492,
-                        logoUrl: null,
-                        name: 'Julian Brandt',
-                        birthday: '1996-05-02',
-                        nationalities: ['Germany'],
-                        number: 10,
                         position: 'Left Winger',
                     },
                     {

@@ -70,6 +70,12 @@ describe('src/api/competition/methods.ts', () => {
                     },
                     {
                         countryId: 189,
+                        id: 'FAYC',
+                        logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/fayc.png',
+                        title: 'FA Youth Cup',
+                    },
+                    {
+                        countryId: 189,
                         id: 'GBFL',
                         logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/gbfl.png',
                         title: 'EFL Trophy',
@@ -100,6 +106,12 @@ describe('src/api/competition/methods.ts', () => {
                         id: 'FR3',
                         logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/fr3.png',
                         title: 'Championnat National',
+                    },
+                    {
+                        countryId: 50,
+                        id: 'FRC',
+                        logoUrl: 'https://tmssl.akamaized.net//images/logo/normal/frc.png',
+                        title: 'Coupe de France',
                     },
                     {
                         countryId: 50,
