@@ -11,7 +11,7 @@ import { Player } from './interface';
 
 import url from '../../url';
 
-export function list(clubId: string, seasonId: string): Promise<Array<Player>> {
+export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
     return makeRequest(url.player.list(clubId, seasonId))
         .then(data => {
             try {

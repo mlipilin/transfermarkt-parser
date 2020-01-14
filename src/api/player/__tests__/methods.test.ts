@@ -423,7 +423,7 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Centre-Forward',
                     },
                 ];
-                await expect(list('281', '2018')).resolves.toEqual(response);
+                await expect(list(281, '2018')).resolves.toEqual(response);
             },
             JEST_ASYNC_TIMEOUT,
         );
@@ -711,7 +711,7 @@ describe('src/api/player/methods.ts', () => {
                         position: 'Centre-Forward',
                     },
                 ];
-                await expect(list('15', '2018')).resolves.toEqual(response);
+                await expect(list(15, '2018')).resolves.toEqual(response);
             },
             JEST_ASYNC_TIMEOUT,
         );
