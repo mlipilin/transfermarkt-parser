@@ -3,7 +3,7 @@ import axios from 'axios';
 // Constants
 import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/errors';
 
-export default async function makeRequest(url, params = {}) {
+export default async function makeRequest(url: string, params: object = {}) {
     try {
         const response = await axios.request({ url, ...params });
         const { data, status } = response;

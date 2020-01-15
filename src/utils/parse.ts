@@ -1,14 +1,16 @@
 // Constants
-import * as ERROR from '../constants/errors';
+import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_PARSING, ERROR_SERVER } from '../constants/errors';
 
-export default fn => data => {
+export default (fn: (data: any) => any, defaultResult: any = undefined) => (data: any) => {
     try {
         return fn(data);
     } catch (error) {
-        const knownErrors = Object.values(ERROR);
-        if (knownErrors.includes(error)) {
+        if (error === ERROR_NOT_FOUND) {
+            return defaultResult;
+        }
+        if (error === ERROR_NETWORK || error === ERROR_SERVER) {
             throw error;
         }
-        throw ERROR.ERROR_PARSING;
+        throw ERROR_PARSING;
     }
 };
