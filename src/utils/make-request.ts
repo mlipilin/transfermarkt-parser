@@ -5,7 +5,7 @@ import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/error
 
 export default async function makeRequest(url, params = {}) {
     try {
-        const response = await axios({ url, ...params });
+        const response = await axios.request({ url, ...params });
         const { data, status } = response;
         if (status >= 200 && status <= 299) {
             return data;
