@@ -113,5 +113,13 @@ describe('src/parsers/club/methods.ts', () => {
             },
             JEST_ASYNC_TIMEOUT,
         );
+        it(
+            'Should return empty array for INcorrect params',
+            async () => {
+                const response = [];
+                await expect(list('aaa', 'bbb')).resolves.toEqual(response);
+            },
+            JEST_ASYNC_TIMEOUT,
+        );
     });
 });
