@@ -2,7 +2,7 @@ import { list } from '../methods';
 
 import { JEST_ASYNC_TIMEOUT } from '../../../settings';
 
-describe('src/api/competition/methods.ts', () => {
+describe('src/parsers/competition/methods.ts', () => {
     describe('list', () => {
         it(
             'Should return correct result for England (id=189)',

@@ -2,7 +2,7 @@ import { list } from '../methods';
 
 import { JEST_ASYNC_TIMEOUT } from '../../../settings';
 
-describe('src/api/season/methods.ts', () => {
+describe('src/parsers/season/methods.ts', () => {
     describe('list', () => {
         it(
             'Should return correct result for EPL (id=GB2)',

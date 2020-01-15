@@ -2,7 +2,7 @@ import { list } from '../methods';
 
 import { JEST_ASYNC_TIMEOUT } from '../../../settings';
 
-describe('src/api/club/methods.ts', () => {
+describe('src/parsers/club/methods.ts', () => {
     describe('list', () => {
         it(
             'Should return correct result for EPL, 17/18 (GB1, 2017)',

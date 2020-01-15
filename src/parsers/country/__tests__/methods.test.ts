@@ -2,7 +2,7 @@ import { list } from '../methods';
 
 import { JEST_ASYNC_TIMEOUT } from '../../../settings';
 
-describe('src/api/country/methods.ts', () => {
+describe('src/parsers/country/methods.ts', () => {
     describe('list', () => {
         it(
             'Should return correct result',

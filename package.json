@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc",
         "lint": "eslint --fix . && echo Lint complete.",
-        "start": "npm run build && node build/index.js",
+        "start": "npm run build && node build/test-parsers.js",
         "test": "jest"
     },
     "author": "Mikhail Lipilin <lipilin.m@gmail.com>",

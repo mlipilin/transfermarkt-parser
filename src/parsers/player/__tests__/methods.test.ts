@@ -2,7 +2,7 @@ import { list } from '../methods';
 
 import { JEST_ASYNC_TIMEOUT } from '../../../settings';
 
-describe('src/api/player/methods.ts', () => {
+describe('src/parsers/player/methods.ts', () => {
     describe('list', () => {
         it(
             'Should return correct result for Manchester City, 17/18 (281, 2018)',

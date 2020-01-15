@@ -1,7 +1,7 @@
 import { club, competition, country, matchday, player, season } from './index';
 
-competition
-    .list(189)
+country
+    .list()
     .then(response => {
         console.log('response', response);
     })
