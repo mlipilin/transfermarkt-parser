@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-import makeRequest from './make-request';
+import makeRequest from '../make-request';
 
 // Constants
-import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/errors';
+import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../../constants/errors';
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;

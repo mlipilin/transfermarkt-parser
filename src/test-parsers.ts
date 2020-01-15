@@ -1,10 +1,18 @@
 import { club, competition, country, matchday, player, season } from './index';
 
-country
-    .list()
+club.list('aaa', 'bbb')
     .then(response => {
         console.log('response', response);
     })
     .catch(error => {
         console.log('error', error);
     });
+
+// country
+//     .list()
+//     .then(response => {
+//         console.log('response', response);
+//     })
+//     .catch(error => {
+//         console.log('error', error);
+//     });
