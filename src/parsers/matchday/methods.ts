@@ -19,6 +19,6 @@ export function list(competitionId: string, seasonId: string): Promise<Array<Mat
                 seasonId,
                 title: node.querySelector('.table-header').innerHTML,
             }));
-    });
+    }, []);
     return makeRequest(url.matchday.list(competitionId, seasonId)).then(parseFn);
 }

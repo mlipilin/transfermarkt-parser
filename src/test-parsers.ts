@@ -1,6 +1,49 @@
 import { club, competition, country, matchday, player, season } from './index';
 
-club.list('aaa', 'bbb')
+// Club
+// club.list('aaa', 'bbb')
+//     .then(response => {
+//         console.log('response', response);
+//     })
+//     .catch(error => {
+//         console.log('error', error);
+//     });
+
+// Competition
+// competition
+//     .list(-123)
+//     .then(response => {
+//         console.log('response', response);
+//     })
+//     .catch(error => {
+//         console.log('error', error);
+//     });
+
+// Country
+// country
+//     .list()
+//     .then(response => {
+//         console.log('response', response);
+//     })
+//     .catch(error => {
+//         console.log('error', error);
+//     });
+
+// Matchday
+// matchday
+//     // .list('aaa', 'bbb')
+//     .list('GB1', '2018')
+//     .then(response => {
+//         console.log('response', response);
+//     })
+//     .catch(error => {
+//         console.log('error', error);
+//     });
+
+// Player
+player
+    .list(undefined, undefined)
+    // .list(15, '2018')
     .then(response => {
         console.log('response', response);
     })
@@ -8,8 +51,10 @@ club.list('aaa', 'bbb')
         console.log('error', error);
     });
 
-// country
-//     .list()
+// Season
+// season
+//     .list('aaa')
+//     // .list('GB1')
 //     .then(response => {
 //         console.log('response', response);
 //     })

@@ -107,5 +107,21 @@ describe('src/parsers/season/methods.ts', () => {
             },
             JEST_ASYNC_TIMEOUT,
         );
+        it(
+            'Should return empty array for NO provided params',
+            async () => {
+                const response = [];
+                await expect(list(undefined)).resolves.toEqual(response);
+            },
+            JEST_ASYNC_TIMEOUT,
+        );
+        it(
+            'Should return empty array for INcorrect params',
+            async () => {
+                const response = [];
+                await expect(list('aaa')).resolves.toEqual(response);
+            },
+            JEST_ASYNC_TIMEOUT,
+        );
     });
 });

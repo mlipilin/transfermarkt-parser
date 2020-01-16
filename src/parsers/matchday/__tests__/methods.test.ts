@@ -65,5 +65,19 @@ describe('src/parsers/matchday/methods.ts', () => {
             },
             JEST_ASYNC_TIMEOUT,
         );
+        it(
+            'Should return empty array for NO provided params',
+            async () => {
+                await expect(list(undefined, undefined)).resolves.toEqual([]);
+            },
+            JEST_ASYNC_TIMEOUT,
+        );
+        it(
+            'Should return empty array for INcorrect params',
+            async () => {
+                await expect(list('aaa', 'bbb')).resolves.toEqual([]);
+            },
+            JEST_ASYNC_TIMEOUT,
+        );
     });
 });

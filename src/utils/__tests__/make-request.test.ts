@@ -10,33 +10,53 @@ const mockedAxios = axios as jest.Mocked<typeof axios>;
 
 describe('src/utils/make-request.ts', () => {
     describe('makeRequest', () => {
-        describe('axios success', () => {
-            it('status = [200...299]', async () => {
+        describe('success', () => {
+            it('status = [200...299] -> DATA', async () => {
                 const data = { foo: 'bar' };
                 mockedAxios.request.mockResolvedValueOnce({ data, status: 200 });
                 await expect(makeRequest('some url')).resolves.toEqual(data);
             });
-            it('status = 404', async () => {
+            it('status = 404 -> NULL', async () => {
                 mockedAxios.request.mockResolvedValueOnce({ status: 404 });
-                await expect(makeRequest('some url')).rejects.toBe(ERROR_NOT_FOUND);
+                await expect(makeRequest('some url')).resolves.toBeNull();
             });
-            it('other error statuses', async () => {
+            it('other error statuses -> THROW', async () => {
                 mockedAxios.request.mockResolvedValueOnce({ status: 500 });
                 await expect(makeRequest('some url')).rejects.toBe(ERROR_SERVER);
             });
         });
-        describe('axios error', () => {
-            it('empty error', async () => {
-                mockedAxios.request.mockRejectedValueOnce(null);
-                await expect(makeRequest('some url')).rejects.toBe(ERROR_NETWORK);
+        describe('error', () => {
+            describe('isErrorAxios', () => {
+                it('status = 404 -> NULL', async () => {
+                    mockedAxios.request.mockRejectedValueOnce({
+                        isAxiosError: true,
+                        response: { status: 404 },
+                    });
+                    await expect(makeRequest('some url')).resolves.toBeNull();
+                });
+                it('message = "Max redirects exceeded." -> NULL', async () => {
+                    mockedAxios.request.mockRejectedValueOnce({
+                        isAxiosError: true,
+                        message: 'Max redirects exceeded.',
+                    });
+                    await expect(makeRequest('some url')).resolves.toBeNull();
+                });
+                it('other error -> ERROR_NETWORK', async () => {
+                    mockedAxios.request.mockRejectedValueOnce({
+                        isAxiosError: true,
+                    });
+                    await expect(makeRequest('some url')).rejects.toBe(ERROR_NETWORK);
+                });
             });
-            it('"Max redirects exceeded" error', async () => {
-                mockedAxios.request.mockRejectedValueOnce(new Error('Max redirects exceeded.'));
-                await expect(makeRequest('some url')).rejects.toBe(ERROR_NOT_FOUND);
-            });
-            it('other errors', async () => {
-                mockedAxios.request.mockRejectedValueOnce('other error');
-                await expect(makeRequest('some url')).rejects.toBe('other error');
+            describe('isErrorUnknown', () => {
+                it('empty error -> ERROR_NETWORK', async () => {
+                    mockedAxios.request.mockRejectedValueOnce(null);
+                    await expect(makeRequest('some url')).rejects.toBe(ERROR_NETWORK);
+                });
+                it('other error', async () => {
+                    mockedAxios.request.mockRejectedValueOnce(new Error('other error'));
+                    await expect(makeRequest('some url')).rejects.toBe(ERROR_NETWORK);
+                });
             });
         });
     });

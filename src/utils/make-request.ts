@@ -1,11 +1,13 @@
-import axios from 'axios';
+import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 // Constants
 import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/errors';
 
-export default async function makeRequest(url: string, params: object = {}) {
+const knownErrors = [ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER];
+
+export default async function makeRequest(url: string, params: AxiosRequestConfig = {}) {
     try {
-        const response = await axios.request({ url, ...params });
+        const response: AxiosResponse = await axios.request({ url, ...params });
         const { data, status } = response;
         if (status >= 200 && status <= 299) {
             return data;
@@ -14,15 +16,29 @@ export default async function makeRequest(url: string, params: object = {}) {
         }
         throw ERROR_SERVER;
     } catch (error) {
-        if (!error) {
-            throw ERROR_NETWORK;
-        } else if (error instanceof Error) {
-            if (error.message === 'Max redirects exceeded.') {
-                throw ERROR_NOT_FOUND;
+        let finalError = error;
+
+        const isErrorUnknown = !knownErrors.includes(error);
+        const isErrorAxios = !!error && error.isAxiosError;
+
+        if (isErrorAxios) {
+            const axiosError = error as AxiosError;
+            const isError404 =
+                (axiosError.response && axiosError.response.status === 404) ||
+                axiosError.message === 'Max redirects exceeded.';
+            if (isError404) {
+                finalError = ERROR_NOT_FOUND;
             } else {
-                throw ERROR_NETWORK;
+                finalError = ERROR_NETWORK;
             }
+        } else if (isErrorUnknown) {
+            finalError = ERROR_NETWORK;
         }
-        throw error;
+
+        if (finalError === ERROR_NOT_FOUND) {
+            return null;
+        }
+
+        throw finalError;
     }
 }

@@ -22,6 +22,6 @@ export function list(): Promise<Array<Country>> {
                     title: node.innerHTML,
                 };
             });
-    });
+    }, []);
     return makeRequest(url.country.list()).then(parseFn);
 }

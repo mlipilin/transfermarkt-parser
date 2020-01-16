@@ -23,7 +23,7 @@ export function list(countryId: number): Promise<Array<Competition>> {
                     title: node.innerHTML,
                 };
             });
-    });
+    }, []);
     return makeRequest(url.competition.list(), {
         method: 'post',
         headers: {
