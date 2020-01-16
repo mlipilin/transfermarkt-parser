@@ -2,11 +2,11 @@
     "name": "transfermarkt-parser",
     "version": "0.1.0",
     "description": "",
-    "main": "index.js",
+    "main": "./build/index.js",
     "scripts": {
         "build": "tsc",
         "lint": "eslint --fix . && echo Lint complete.",
-        "start": "npm run build && node build/dev.js",
+        "start": "npm run build && node build/test-parsers.js",
         "test": "jest"
     },
     "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
