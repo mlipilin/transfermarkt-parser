@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/mlipilin/transfermarkt-parser/tree/master.svg?style=svg)](https://circleci.com/gh/mlipilin/transfermarkt-parser/tree/master)
+[![GitHub Actions](https://github.com/mlipilin/transfermarkt-parser/workflows/Run%20tests/badge.svg)](https://github.com/mlipilin/transfermarkt-parser/actions)
 
 # Transfermarkt Parser
 
