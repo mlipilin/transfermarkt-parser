@@ -1,29 +1,29 @@
-[![CircleCI](https://circleci.com/gh/mlipilin/transfermarkt-parser/tree/master.svg?style=svg)](https://circleci.com/gh/mlipilin/transfermarkt-parser/tree/master)
+[![GitHub Actions](https://github.com/mlipilin/transfermarkt-parser/workflows/Run%20tests/badge.svg)](https://github.com/mlipilin/transfermarkt-parser/actions)
 
-# Transfermarkt API JavaScript
+# Transfermarkt Parser
 
 ## Entities
 
 Base:
 
--   Countries
--   Competitions
--   Seasons
--   Clubs
--   Players
+- Countries
+- Competitions
+- Seasons
+- Clubs
+- Players
 
 Specific:
 
--   Matchdays
--   Games
--   Goals
--   Substitutions
--   Cards
+- Matchdays
+- Games
+- Goals
+- Substitutions
+- Cards
 
 Base Entity Methods:
 
--   get(id)
--   list(parentEntityIds[]?)
+- get(id)
+- list(parentEntityIds[]?)
 
 How can I get all games data?
 
