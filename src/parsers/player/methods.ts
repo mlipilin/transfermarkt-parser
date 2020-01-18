@@ -14,6 +14,10 @@ import url from '../../url';
 
 export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
     const parseFn = parse(data => {
+        if (!data) {
+            throw ERROR_NOT_FOUND;
+        }
+
         const dom = new JSDOM(data);
 
         // Correct page marker
