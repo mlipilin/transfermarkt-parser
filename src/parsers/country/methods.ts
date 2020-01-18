@@ -1,6 +1,7 @@
 import { JSDOM } from 'jsdom';
 
-import { Country } from './interface';
+// Interfaces
+import { Country } from '../../interfaces';
 
 // Utils
 import { makeRequest, parse } from '../../utils';

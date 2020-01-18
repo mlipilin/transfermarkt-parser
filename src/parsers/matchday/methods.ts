@@ -1,6 +1,7 @@
 import { JSDOM } from 'jsdom';
 
-import { Matchday } from './interface';
+// Interfaces
+import { Matchday } from '../../interfaces';
 
 // Utils
 import { makeRequest, parse } from '../../utils';

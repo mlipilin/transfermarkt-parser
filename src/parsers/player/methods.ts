@@ -4,10 +4,11 @@ import * as moment from 'moment';
 // Constants
 import { ERROR_NOT_FOUND } from '../../constants/errors';
 
+// Interfaces
+import { Player } from '../../interfaces';
+
 // Utils
 import { makeRequest, parse } from '../../utils';
-
-import { Player } from './interface';
 
 import url from '../../url';
 

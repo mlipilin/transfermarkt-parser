@@ -1,6 +1,7 @@
 import { JSDOM } from 'jsdom';
 
-import { Competition } from './interface';
+// Interfaces
+import { Competition } from '../../interfaces';
 
 // Utils
 import { makeRequest, parse } from '../../utils';

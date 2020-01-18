@@ -1,9 +1,10 @@
 import { JSDOM } from 'jsdom';
 
-import { Season } from './interface';
-
 // Constants
 import { ERROR_NOT_FOUND } from '../../constants/errors';
+
+// Interfaces
+import { Season } from '../../interfaces';
 
 // Utils
 import { makeRequest, parse } from '../../utils';

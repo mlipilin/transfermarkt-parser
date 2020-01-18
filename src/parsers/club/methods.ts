@@ -1,9 +1,10 @@
 import { JSDOM } from 'jsdom';
 
-import { Club } from './interface';
-
 // Constants
 import { ERROR_NOT_FOUND } from '../../constants/errors';
+
+// Interfaces
+import { Club } from '../../interfaces';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
