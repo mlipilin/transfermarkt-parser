@@ -4,15 +4,20 @@ import * as moment from 'moment';
 // Constants
 import { ERROR_NOT_FOUND } from '../../constants/errors';
 
+// Entities
+import { Player, createPlayer } from '../../entities/player';
+
 // Utils
 import { makeRequest, parse } from '../../utils';
-
-import { Player } from './interface';
 
 import url from '../../url';
 
 export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
     const parseFn = parse(data => {
+        if (!data) {
+            throw ERROR_NOT_FOUND;
+        }
+
         const dom = new JSDOM(data);
 
         // Correct page marker
@@ -35,9 +40,9 @@ export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
                 const numberNode = node.querySelector('.rn_nummer');
                 const number = numberNode ? numberNode.innerHTML : '-';
 
-                const logoNode = node.querySelector('table.inline-table img');
-                const logoUrl =
-                    logoNode && logoNode.src ? logoNode.src.replace('small', 'big') : null;
+                const photoNode = node.querySelector('table.inline-table img');
+                const photoUrl =
+                    photoNode && photoNode.src ? photoNode.src.replace('small', 'big') : null;
 
                 const positionNode = node.querySelector('table.inline-table tr:last-child td');
                 const position = positionNode.innerHTML || null;
@@ -55,15 +60,15 @@ export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
                     });
                 }
 
-                return {
+                return createPlayer({
                     id,
-                    logoUrl,
                     name,
                     birthday,
                     nationalities,
                     number: number === '-' ? null : parseInt(number),
+                    photoUrl,
                     position,
-                };
+                });
             });
     }, []);
     return makeRequest(url.player.list(clubId, seasonId)).then(parseFn);

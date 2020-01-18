@@ -1,6 +1,10 @@
 import { JSDOM } from 'jsdom';
 
-import { Competition } from './interface';
+// Constants
+import { ERROR_NOT_FOUND } from '../../constants/errors';
+
+// Entities
+import { Competition, createCompetition } from '../../entities/competition';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
@@ -9,6 +13,10 @@ import url from '../../url';
 
 export function list(countryId: number): Promise<Array<Competition>> {
     const parseFn = parse(data => {
+        if (!data) {
+            throw ERROR_NOT_FOUND;
+        }
+
         const dom = new JSDOM(data);
 
         return [...dom.window.document.querySelectorAll('option')]
@@ -16,12 +24,12 @@ export function list(countryId: number): Promise<Array<Competition>> {
             .map(node => {
                 const id = node.getAttribute('value');
 
-                return {
+                return createCompetition({
                     countryId,
                     id,
                     logoUrl: url.competition.logo(id),
                     title: node.innerHTML,
-                };
+                });
             });
     }, []);
     return makeRequest(url.competition.list(), {

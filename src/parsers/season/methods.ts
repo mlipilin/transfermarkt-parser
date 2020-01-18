@@ -1,9 +1,10 @@
 import { JSDOM } from 'jsdom';
 
-import { Season } from './interface';
-
 // Constants
 import { ERROR_NOT_FOUND } from '../../constants/errors';
+
+// Entities
+import { Season, createSeason } from '../../entities/season';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
@@ -12,6 +13,10 @@ import url from '../../url';
 
 export function list(competitionId: string): Promise<Array<Season>> {
     const parseFn = parse(data => {
+        if (!data) {
+            throw ERROR_NOT_FOUND;
+        }
+
         const dom = new JSDOM(data);
 
         // Correct page marker
@@ -28,11 +33,13 @@ export function list(competitionId: string): Promise<Array<Season>> {
 
         return [...dom.window.document.querySelectorAll('select[name=saison_id] option')]
             .filter(node => node.getAttribute('value'))
-            .map(node => ({
-                competitionId,
-                id: node.getAttribute('value'),
-                title: node.innerHTML,
-            }));
+            .map(node =>
+                createSeason({
+                    competitionId,
+                    id: node.getAttribute('value'),
+                    title: node.innerHTML,
+                }),
+            );
     }, []);
     return makeRequest(url.season.list(competitionId)).then(parseFn);
 }
