@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 
-// Interfaces
-import { Competition } from '../../interfaces';
+// Entities
+import { Competition, createCompetition } from '../../entities/competition';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
@@ -17,12 +17,12 @@ export function list(countryId: number): Promise<Array<Competition>> {
             .map(node => {
                 const id = node.getAttribute('value');
 
-                return {
+                return createCompetition({
                     countryId,
                     id,
                     logoUrl: url.competition.logo(id),
                     title: node.innerHTML,
-                };
+                });
             });
     }, []);
     return makeRequest(url.competition.list(), {

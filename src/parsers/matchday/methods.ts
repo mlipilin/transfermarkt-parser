@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 
-// Interfaces
-import { Matchday } from '../../interfaces';
+// Entities
+import { Matchday, createMatchday } from '../../entities/matchday';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
@@ -14,12 +14,14 @@ export function list(competitionId: string, seasonId: string): Promise<Array<Mat
 
         return [...dom.window.document.querySelectorAll('.large-6.columns:not([id])')]
             .filter(node => !!node.querySelector('.table-header'))
-            .map((node, index) => ({
-                competitionId,
-                id: index + 1,
-                seasonId,
-                title: node.querySelector('.table-header').innerHTML,
-            }));
+            .map((node, index) =>
+                createMatchday({
+                    competitionId,
+                    id: index + 1,
+                    seasonId,
+                    title: node.querySelector('.table-header').innerHTML,
+                }),
+            );
     }, []);
     return makeRequest(url.matchday.list(competitionId, seasonId)).then(parseFn);
 }

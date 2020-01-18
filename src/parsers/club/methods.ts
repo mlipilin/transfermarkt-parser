@@ -3,8 +3,8 @@ import { JSDOM } from 'jsdom';
 // Constants
 import { ERROR_NOT_FOUND } from '../../constants/errors';
 
-// Interfaces
-import { Club } from '../../interfaces';
+// Entities
+import { Club, createClub } from '../../entities/club';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
@@ -33,11 +33,11 @@ export function list(competitionId: string, seasonId: string): Promise<Array<Clu
                 const linkNode = node.querySelector('.hauptlink a');
                 const id = parseInt(linkNode.getAttribute('id'));
 
-                return {
+                return createClub({
                     id,
                     logoUrl: url.club.logo(id),
                     title: linkNode.innerHTML,
-                };
+                });
             });
     }, []);
     return makeRequest(url.club.list(competitionId, seasonId)).then(parseFn);

@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 
-// Interfaces
-import { Country } from '../../interfaces';
+// Entities
+import { Country, createCountry } from '../../entities/country';
 
 // Utils
 import { makeRequest, parse } from '../../utils';
@@ -17,11 +17,11 @@ export function list(): Promise<Array<Country>> {
             .map(node => {
                 const id = parseInt(node.getAttribute('value'));
 
-                return {
+                return createCountry({
                     flagUrl: url.country.flag(id),
                     id,
                     title: node.innerHTML,
-                };
+                });
             });
     }, []);
     return makeRequest(url.country.list()).then(parseFn);
