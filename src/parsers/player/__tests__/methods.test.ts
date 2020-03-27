@@ -543,6 +543,15 @@ describe('src/parsers/player/methods.ts', () => {
                         position: 'Left-Back',
                     }),
                     createPlayer({
+                        id: 30059,
+                        name: 'Lars Bender',
+                        birthday: '1989-04-27',
+                        nationalities: ['Germany'],
+                        number: 8,
+                        photoUrl: null,
+                        position: 'Right-Back',
+                    }),
+                    createPlayer({
                         id: 202591,
                         name: 'Benjamin Henrichs',
                         birthday: '1997-02-23',
@@ -570,15 +579,6 @@ describe('src/parsers/player/methods.ts', () => {
                         position: 'Right-Back',
                     }),
                     createPlayer({
-                        id: 30059,
-                        name: 'Lars Bender',
-                        birthday: '1989-04-27',
-                        nationalities: ['Germany'],
-                        number: 8,
-                        photoUrl: null,
-                        position: 'Defensive Midfield',
-                    }),
-                    createPlayer({
                         id: 34787,
                         name: 'Julian Baumgartlinger',
                         birthday: '1988-01-02',
@@ -597,6 +597,15 @@ describe('src/parsers/player/methods.ts', () => {
                         position: 'Defensive Midfield',
                     }),
                     createPlayer({
+                        id: 187492,
+                        name: 'Julian Brandt',
+                        birthday: '1996-05-02',
+                        nationalities: ['Germany'],
+                        number: 10,
+                        photoUrl: null,
+                        position: 'Central Midfield',
+                    }),
+                    createPlayer({
                         id: 89701,
                         name: 'Charles Aránguiz',
                         birthday: '1989-04-17',
@@ -613,15 +622,6 @@ describe('src/parsers/player/methods.ts', () => {
                         number: 21,
                         photoUrl: null,
                         position: 'Central Midfield',
-                    }),
-                    createPlayer({
-                        id: 187492,
-                        name: 'Julian Brandt',
-                        birthday: '1996-05-02',
-                        nationalities: ['Germany'],
-                        number: 10,
-                        photoUrl: null,
-                        position: 'Attacking Midfield',
                     }),
                     createPlayer({
                         id: 309400,

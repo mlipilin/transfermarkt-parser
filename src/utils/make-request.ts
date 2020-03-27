@@ -5,7 +5,17 @@ import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/error
 
 const knownErrors = [ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER];
 
+function timeout(ms) {
+    const start = Date.now();
+    let now = Date.now();
+    while (now - start < ms) {
+        now = Date.now();
+    }
+}
+
 export default async function makeRequest(url: string, params: AxiosRequestConfig = {}) {
+    // It needs to pass Transfernarkt DDoS protection
+    timeout(5000);
     try {
         const response: AxiosResponse = await axios.request({ url, ...params });
         const { data, status } = response;
