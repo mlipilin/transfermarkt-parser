@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { club, competition, country, matchday, player, season } from './index';
+import { club, competition, country, game, matchday, player, season } from './index';
 
 // const log = console.log;
 
@@ -52,19 +52,6 @@ import { club, competition, country, matchday, player, season } from './index';
 //         console.log('error', error);
 //     });
 
-// Matchday
-matchday
-    // .list('aaa', 'bbb')
-    // .list('GB1', '2018')
-    // .list('GB1', '2090')
-    .list(undefined, undefined)
-    .then(response => {
-        console.log('response', response);
-    })
-    .catch(error => {
-        console.log('error', error);
-    });
-
 // Player
 // player
 //     // .list(undefined, undefined)
@@ -86,3 +73,30 @@ matchday
 //     .catch(error => {
 //         console.log('error', error);
 //     });
+
+// Matchday
+// matchday
+//     // .list('aaa', 'bbb')
+//     // .list('GB1', '2018')
+//     // .list('GB1', '2090')
+//     .list(undefined, undefined)
+//     .then(response => {
+//         console.log('response', response);
+//     })
+//     .catch(error => {
+//         console.log('error', error);
+//     });
+
+// Game
+// game.list('GB1', '2019', 3)
+game.list('L1', '2017', 3)
+    // game.list('GB1', '2019', 312312)
+    // game.list('GB1', '2090', 3)
+    // game.list('GB1', '1900', 3)
+    // game.list('aaa', 'bbb', 312312)
+    .then(response => {
+        console.log('response', response);
+    })
+    .catch(error => {
+        console.log('error', error);
+    });
