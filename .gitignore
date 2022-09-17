@@ -1,3 +1,4 @@
-build/
-node_modules/
-launch.json
+.DS_Store
+.vscode
+dist
+node_modules

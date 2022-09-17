@@ -1,9 +1,24 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "outDir": "./build/",
-        "rootDir": "./src/",
-        "sourceMap": true
-    }
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es5",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": ["src"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
 }

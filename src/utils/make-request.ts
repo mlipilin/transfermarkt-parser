@@ -1,54 +1,28 @@
-import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 
 // Constants
-import { ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/errors';
+import { ERROR_NOT_FOUND, ERROR_SERVER } from 'constants/errors'
 
-const knownErrors = [ERROR_NETWORK, ERROR_NOT_FOUND, ERROR_SERVER];
-
-function timeout(ms) {
-    const start = Date.now();
-    let now = Date.now();
-    while (now - start < ms) {
-        now = Date.now();
-    }
+function timeout(ms: number) {
+  const start = Date.now()
+  let now = Date.now()
+  while (now - start < ms) {
+    now = Date.now()
+  }
 }
 
-export default async function makeRequest(url: string, params: AxiosRequestConfig = {}) {
-    // It needs to pass Transfernarkt DDoS protection
-    timeout(5000);
-    try {
-        const response: AxiosResponse = await axios.request({ url, ...params });
-        const { data, status } = response;
-        if (status >= 200 && status <= 299) {
-            return data;
-        } else if (status === 404) {
-            throw ERROR_NOT_FOUND;
-        }
-        throw ERROR_SERVER;
-    } catch (error) {
-        let finalError = error;
-
-        const isErrorUnknown = !knownErrors.includes(error);
-        const isErrorAxios = !!error && error.isAxiosError;
-
-        if (isErrorAxios) {
-            const axiosError = error as AxiosError;
-            const isError404 =
-                (axiosError.response && axiosError.response.status === 404) ||
-                axiosError.message === 'Max redirects exceeded.';
-            if (isError404) {
-                finalError = ERROR_NOT_FOUND;
-            } else {
-                finalError = ERROR_NETWORK;
-            }
-        } else if (isErrorUnknown) {
-            finalError = ERROR_NETWORK;
-        }
-
-        if (finalError === ERROR_NOT_FOUND) {
-            return null;
-        }
-
-        throw finalError;
-    }
+export default async function makeRequest(
+  url: string,
+  params: AxiosRequestConfig = {}
+) {
+  // It needs to pass Transfernarkt DDoS protection
+  timeout(5000)
+  const response: AxiosResponse = await axios.request({ url, ...params })
+  const { data, status } = response
+  if (status >= 200 && status <= 299) {
+    return data
+  } else if (status === 404) {
+    throw ERROR_NOT_FOUND
+  }
+  throw ERROR_SERVER
 }
