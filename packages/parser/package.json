@@ -1,0 +1,31 @@
+{
+  "name": "transfermarkt-parser",
+  "version": "0.0.0",
+  "description": "A small tool for parsing https://www.transfermarkt.com website",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlipilin/transfermarkt-parser.git"
+  },
+  "keywords": [
+    "transfermarkt",
+    "parser"
+  ],
+  "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlipilin/transfermarkt-parser/issues"
+  },
+  "homepage": "https://github.com/mlipilin/transfermarkt-parser#readme",
+  "devDependencies": {
+    "@types/jsdom": "^20.0.0",
+    "axios": "^0.27.2",
+    "jsdom": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.3"
+  }
+}

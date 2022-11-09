@@ -1,49 +1,34 @@
 {
-  "name": "transfermarkt-parser",
-  "version": "0.0.0",
-  "description": "A small tool for parsing https://www.transfermarkt.com website",
-  "main": "dist/index.js",
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "eslint": "eslint --ignore-path .gitignore .",
     "lint": "npm run prettier -- --check && npm run eslint",
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|sass|ts|tsx|yml)\"",
-    "start": "ts-node src/start.ts",
-    "test": "jest",
-    "prepare": "husky install"
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|ts|tsx|yml)\"",
+    "prepare": "husky install",
+    "reinstall": "rm -rf node_modules package-lock.json packages/demo-client/node_modules packages/demo-server/node_modules packages/parser/node_modules && npx lerna bootstrap",
+    "start:demo-client": "npx lerna run start --scope demo-client"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mlipilin/transfermarkt-parser.git"
-  },
-  "keywords": [
-    "transfermarkt",
-    "parser"
-  ],
-  "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mlipilin/transfermarkt-parser/issues"
-  },
-  "homepage": "https://github.com/mlipilin/transfermarkt-parser#readme",
   "devDependencies": {
-    "@types/jsdom": "^20.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "axios": "^0.27.2",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-standard": "^5.0.0",
     "husky": "^8.0.1",
-    "jsdom": "^20.0.0",
+    "lerna": "^5.5.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.1.0",
     "typescript": "^4.8.3"
   }
 }
