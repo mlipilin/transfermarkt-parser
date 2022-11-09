@@ -18,10 +18,12 @@ export function list(): Promise<Array<Country>> {
     }
 
     const dom = new JSDOM(data)
+
     const nodes = Array.from(dom.window.document.querySelectorAll('option'))
 
     return nodes
       .filter((node) => !!node.getAttribute('value'))
+
       .map((node) => {
         const id = parseInt(node.getAttribute('value') as string)
 

@@ -16,9 +16,15 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off"
   },
   "globals": {
     "JSX": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
