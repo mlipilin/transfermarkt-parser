@@ -5,13 +5,14 @@
     "packages/*"
   ],
   "scripts": {
+    "demo:start": "npx lerna run dev --scope demo",
+    "demo:storybook": "npx lerna run storybook --scope demo",
     "eslint": "eslint --ignore-path .gitignore .",
     "lint": "npm run prettier -- --check && npm run eslint",
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|ts|tsx|yml)\"",
     "prepare": "husky install",
-    "reinstall": "rm -rf node_modules package-lock.json packages/demo-client/node_modules packages/demo-server/node_modules packages/parser/node_modules && npx lerna bootstrap",
-    "start:demo": "npx lerna run dev --scope demo"
+    "reinstall": "rm -rf node_modules package-lock.json packages/demo-client/node_modules packages/demo-server/node_modules packages/parser/node_modules && npx lerna bootstrap"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.0",

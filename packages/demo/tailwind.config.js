@@ -17,7 +17,6 @@ module.exports = {
       },
       width: {
         container: '1280px',
-        // container: '1024px',
         main: '864px',
       },
     },
