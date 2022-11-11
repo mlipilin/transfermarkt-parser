@@ -1,26 +1,41 @@
 import cn from 'classnames'
 
 export type Props = Omit<JSX.IntrinsicElements['button'], 'disabled'> & {
+  /** Block button (full container width) */
+  block?: boolean
   /** "disabled" condition */
   disabled?: boolean
   /** Loading indicator */
   isLoading?: boolean
+  /** Loading indicator text (when `isLoading=true`) */
+  loadingText?: string
 }
 
 function Button(props: Props) {
-  const { children, disabled = false, isLoading = false, ...otherProps } = props
+  const { block, children, disabled, isLoading, loadingText, ...otherProps } =
+    props
 
-  const className = cn('w-full bg-sky-500 px-5 py-2 text-white', {
-    'hover:bg-sky-600 active:bg-sky-700': !disabled,
-    'cursor-default': disabled,
-    'opacity-75': disabled || isLoading,
+  const isButtonDisabled = disabled || isLoading
+
+  const className = cn('bg-sky-500 px-5 py-2 text-white', {
+    'cursor-default': isButtonDisabled,
+    'hover:bg-sky-600 active:bg-sky-700': !isButtonDisabled,
+    'opacity-75': isButtonDisabled,
+    'w-full': block,
   })
 
   return (
-    <button {...otherProps} className={className}>
-      {children}
+    <button {...otherProps} className={className} disabled={isButtonDisabled}>
+      {isLoading ? loadingText : children}
     </button>
   )
+}
+
+Button.defaultProps = {
+  block: false,
+  disabled: false,
+  isLoading: false,
+  loadingText: 'Loading...',
 }
 
 export default Button
