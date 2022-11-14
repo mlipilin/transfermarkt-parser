@@ -1,6 +1,9 @@
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { docco as highlighterStyle } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
+// Components
+import Button from 'components/Button'
+
 const requestData = `
 import { game } from "transfermarkt-parser"
 
@@ -127,12 +130,9 @@ export default function Home() {
                   placeholder="Matchday..."
                 />
               </label>
-              <button
-                className="w-full bg-sky-500 px-5 py-2 text-white hover:bg-sky-600 active:bg-sky-700"
-                type="submit"
-              >
+              <Button block type="submit">
                 Send
-              </button>
+              </Button>
             </form>
           </aside>
           {/* /Filters */}
