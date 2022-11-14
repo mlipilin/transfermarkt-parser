@@ -13,7 +13,7 @@
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|ts|tsx|yml)\"",
     "prepare": "husky install",
-    "reinstall": "npm run clean && npx lerna bootstrap --nohoist=react"
+    "reinstall": "npm run clean && npx lerna bootstrap"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.0",
@@ -32,5 +32,9 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
