@@ -1,0 +1,27 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Subtitle from './index'
+
+export const Template = (args) => <Subtitle {...args} />
+
+<Meta
+  title="Components/Subtitle"
+  component={Subtitle}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# Subtitle
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story name="0_0" args={{ children: 'I am a subtitle' }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Props
+
+<ArgsTable component={Subtitle} />

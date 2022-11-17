@@ -5,6 +5,7 @@ import { docco as highlighterStyle } from 'react-syntax-highlighter/dist/cjs/sty
 import Button from 'components/Button'
 import Input from 'components/Input'
 import MenuItem from 'components/MenuItem'
+import Subtitle from 'components/Subtitle'
 import Title from 'components/Title'
 
 const requestData = `
@@ -79,7 +80,7 @@ export default function Home() {
           <main className="w-main max-w-main flex-auto">
             {/* Request */}
             <div>
-              <h2 className="mb-4 text-xl">Usage</h2>
+              <Subtitle>Usage</Subtitle>
               <div className="overflow-auto">
                 <SyntaxHighlighter
                   language="javascript"
@@ -92,7 +93,7 @@ export default function Home() {
             {/* /Request */}
             {/* Response */}
             <div className="mt-8">
-              <h2 className="mb-4 text-xl">Response</h2>
+              <Subtitle>Response</Subtitle>
               <div className="overflow-auto">
                 <SyntaxHighlighter language="json" style={highlighterStyle}>
                   {responseData}
