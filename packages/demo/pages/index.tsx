@@ -5,6 +5,7 @@ import { docco as highlighterStyle } from 'react-syntax-highlighter/dist/cjs/sty
 import Button from 'components/Button'
 import Input from 'components/Input'
 import MenuItem from 'components/MenuItem'
+import Title from 'components/Title'
 
 const requestData = `
 import { game } from "transfermarkt-parser"
@@ -51,13 +52,7 @@ export default function Home() {
   return (
     <div className="flex w-screen justify-center bg-gray-200">
       <div className="w-container border-primary border-t-4 bg-white px-8 pt-14 pb-8">
-        {/* Title */}
-        <h1 className="text-primary text-3xl">
-          Transfermarkt Parser
-          <span className="font-extralight ml-2 opacity-60">Playground</span>
-        </h1>
-        {/* /Title */}
-        {/* Entities */}
+        <Title />
         <nav className="mt-8 flex gap-x-2.5">
           <MenuItem href="/country">Country</MenuItem>
           <MenuItem href="/competition">Competition</MenuItem>
@@ -69,9 +64,7 @@ export default function Home() {
             Game
           </MenuItem>
         </nav>
-        {/* /Entities */}
         <div className="mt-8 flex gap-x-8">
-          {/* Filters */}
           <aside>
             <form className="w-80">
               <Input type="text" placeholder="Country..." />
@@ -83,7 +76,6 @@ export default function Home() {
               </Button>
             </form>
           </aside>
-          {/* /Filters */}
           <main className="w-main max-w-main flex-auto">
             {/* Request */}
             <div>

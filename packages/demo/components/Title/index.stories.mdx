@@ -1,0 +1,27 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Title from './index'
+
+export const Template = (args) => <Title {...args} />
+
+<Meta
+  title="Components/Title"
+  component={Title}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# Title
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story name="0_0" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Props
+
+<ArgsTable component={Title} />
