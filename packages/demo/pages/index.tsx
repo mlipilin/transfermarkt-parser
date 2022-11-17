@@ -3,6 +3,7 @@ import { docco as highlighterStyle } from 'react-syntax-highlighter/dist/cjs/sty
 
 // Components
 import Button from 'components/Button'
+import Input from 'components/Input'
 
 const requestData = `
 import { game } from "transfermarkt-parser"
@@ -102,34 +103,10 @@ export default function Home() {
           {/* Filters */}
           <aside>
             <form className="w-80">
-              <label className="mb-5 block">
-                <input
-                  className="block h-10 w-full border border-gray-300 px-5 focus:border-gray-400 focus:outline-none"
-                  type="text"
-                  placeholder="Country..."
-                />
-              </label>
-              <label className="mb-5 block">
-                <input
-                  className="block h-10 w-full border border-gray-300 px-5 focus:border-gray-400 focus:outline-none"
-                  type="text"
-                  placeholder="Competition..."
-                />
-              </label>
-              <label className="mb-5 block">
-                <input
-                  className="block h-10 w-full border border-gray-300 px-5 focus:border-gray-400 focus:outline-none"
-                  type="text"
-                  placeholder="Season..."
-                />
-              </label>
-              <label className="mb-5 block">
-                <input
-                  className="block h-10 w-full border border-gray-300 px-5 focus:border-gray-400 focus:outline-none"
-                  type="text"
-                  placeholder="Matchday..."
-                />
-              </label>
+              <Input type="text" placeholder="Country..." />
+              <Input type="text" placeholder="Competition..." />
+              <Input type="text" placeholder="Season..." />
+              <Input type="text" placeholder="Matchday..." />
               <Button block type="submit">
                 Send
               </Button>

@@ -1,0 +1,30 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Input from './index'
+
+export const Template = (args) => <Input {...args} />
+
+<Meta
+  title="Components/Input"
+  component={Input}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# Input
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story
+    name="0_0"
+    args={{ type: 'text', placeholder: 'Type your text here...' }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Props
+
+<ArgsTable component={Input} />
