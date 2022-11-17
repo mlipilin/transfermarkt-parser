@@ -8,6 +8,7 @@
     "clean": "rm -rf node_modules package-lock.json packages/demo/node_modules packages/parser/node_modules",
     "demo:start": "npx lerna run dev --scope demo",
     "demo:storybook": "npx lerna run storybook --scope demo",
+    "demo:test": "npx lerna run test --scope demo",
     "eslint": "eslint --ignore-path .gitignore .",
     "lint": "npm run prettier -- --check && npm run eslint",
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
