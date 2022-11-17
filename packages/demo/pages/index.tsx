@@ -4,6 +4,7 @@ import { docco as highlighterStyle } from 'react-syntax-highlighter/dist/cjs/sty
 // Components
 import Button from 'components/Button'
 import Input from 'components/Input'
+import MenuItem from 'components/MenuItem'
 
 const requestData = `
 import { game } from "transfermarkt-parser"
@@ -58,45 +59,15 @@ export default function Home() {
         {/* /Title */}
         {/* Entities */}
         <nav className="mt-8 flex gap-x-2.5">
-          <a
-            href="/country"
-            className="bg-primary-lightest hover:bg-primary-light active:bg-primary px-5 py-2 text-white"
-          >
-            Country
-          </a>
-          <a
-            href="/competition"
-            className="bg-primary-lightest hover:bg-primary-light active:bg-primary px-5 py-2 text-white"
-          >
-            Competition
-          </a>
-          <a
-            href="/season"
-            className="bg-primary-lightest hover:bg-primary-light active:bg-primary px-5 py-2 text-white"
-          >
-            Season
-          </a>
-          <a
-            href="/club"
-            className="bg-primary-lightest hover:bg-primary-light active:bg-primary px-5 py-2 text-white"
-          >
-            Club
-          </a>
-          <a
-            href="/player"
-            className="bg-primary-lightest hover:bg-primary-light active:bg-primary px-5 py-2 text-white"
-          >
-            Player
-          </a>
-          <a
-            href="/matchday"
-            className="bg-primary-lightest hover:bg-primary-light active:bg-primary px-5 py-2 text-white"
-          >
-            Matchday
-          </a>
-          <a href="/game" className="bg-primary px-5 py-2 text-white">
+          <MenuItem href="/country">Country</MenuItem>
+          <MenuItem href="/competition">Competition</MenuItem>
+          <MenuItem href="/season">Season</MenuItem>
+          <MenuItem href="/club">Club</MenuItem>
+          <MenuItem href="/player">Player</MenuItem>
+          <MenuItem href="/matchday">Matchday</MenuItem>
+          <MenuItem href="/game" isActive>
             Game
-          </a>
+          </MenuItem>
         </nav>
         {/* /Entities */}
         <div className="mt-8 flex gap-x-8">
