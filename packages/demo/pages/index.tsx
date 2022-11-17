@@ -1,12 +1,17 @@
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { docco as highlighterStyle } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
-
 // Components
 import Button from 'components/Button'
+import CodeBlock from 'components/CodeBlock'
 import Input from 'components/Input'
 import MenuItem from 'components/MenuItem'
-import Subtitle from 'components/Subtitle'
 import Title from 'components/Title'
+
+// Layout
+import Container from 'layout/Container'
+import Content from 'layout/Content'
+import Main from 'layout/Main'
+import Menu from 'layout/Menu'
+import Page from 'layout/Page'
+import Sidebar from 'layout/Sidebar'
 
 const requestData = `
 import { game } from "transfermarkt-parser"
@@ -51,10 +56,10 @@ const responseData = `
 
 export default function Home() {
   return (
-    <div className="flex w-screen justify-center bg-gray-200">
-      <div className="w-container border-primary border-t-4 bg-white px-8 pt-14 pb-8">
+    <Page>
+      <Container>
         <Title />
-        <nav className="mt-8 flex gap-x-2.5">
+        <Menu>
           <MenuItem href="/country">Country</MenuItem>
           <MenuItem href="/competition">Competition</MenuItem>
           <MenuItem href="/season">Season</MenuItem>
@@ -64,10 +69,10 @@ export default function Home() {
           <MenuItem href="/game" isActive>
             Game
           </MenuItem>
-        </nav>
-        <div className="mt-8 flex gap-x-8">
-          <aside>
-            <form className="w-80">
+        </Menu>
+        <Content>
+          <Sidebar>
+            <form>
               <Input type="text" placeholder="Country..." />
               <Input type="text" placeholder="Competition..." />
               <Input type="text" placeholder="Season..." />
@@ -76,34 +81,14 @@ export default function Home() {
                 Send
               </Button>
             </form>
-          </aside>
-          <main className="w-main max-w-main flex-auto">
-            {/* Request */}
-            <div>
-              <Subtitle>Usage</Subtitle>
-              <div className="overflow-auto">
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={highlighterStyle}
-                >
-                  {requestData}
-                </SyntaxHighlighter>
-              </div>
-            </div>
-            {/* /Request */}
-            {/* Response */}
-            <div className="mt-8">
-              <Subtitle>Response</Subtitle>
-              <div className="overflow-auto">
-                <SyntaxHighlighter language="json" style={highlighterStyle}>
-                  {responseData}
-                </SyntaxHighlighter>
-              </div>
-            </div>
-            {/* /Response */}
-          </main>
-        </div>
-      </div>
-    </div>
+          </Sidebar>
+          <Main>
+            <CodeBlock code={requestData} language="javascript" title="Usage" />
+            <br />
+            <CodeBlock code={responseData} language="json" title="Response" />
+          </Main>
+        </Content>
+      </Container>
+    </Page>
   )
 }

@@ -13,7 +13,7 @@
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|ts|tsx|yml)\"",
     "prepare": "husky install",
-    "reinstall": "npm run clean && npx lerna bootstrap"
+    "reinstall": "npm run clean && npx lerna bootstrap -- --legacy-peer-deps"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.0",

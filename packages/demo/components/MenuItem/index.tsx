@@ -1,7 +1,8 @@
 import cn from 'classnames'
 
 export type Props = JSX.IntrinsicElements['a'] & {
-  isActive: boolean
+  /** Active state */
+  isActive?: boolean
 }
 
 function MenuItem(props: Props) {
