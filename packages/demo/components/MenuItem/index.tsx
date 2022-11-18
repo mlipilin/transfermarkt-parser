@@ -6,14 +6,18 @@ export type Props = JSX.IntrinsicElements['a'] & {
 }
 
 function MenuItem(props: Props) {
-  const { children, isActive, ...otherProps } = props
+  const { children, className: cls, isActive, ...otherProps } = props
 
-  const className = cn('px-5 py-2 text-white', {
-    'bg-primary': isActive,
-    'bg-primary-lightest': !isActive,
-    'hover:bg-primary-light': !isActive,
-    'active:bg-primary': !isActive,
-  })
+  const className = cn(
+    'px-5 py-2 text-white',
+    {
+      'bg-primary': isActive,
+      'bg-primary-lightest': !isActive,
+      'hover:bg-primary-light': !isActive,
+      'active:bg-primary': !isActive,
+    },
+    cls
+  )
 
   return (
     <>

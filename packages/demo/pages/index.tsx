@@ -73,10 +73,18 @@ export default function Home() {
         <Content>
           <Sidebar>
             <form>
-              <Input type="text" placeholder="Country..." />
-              <Input type="text" placeholder="Competition..." />
-              <Input type="text" placeholder="Season..." />
-              <Input type="text" placeholder="Matchday..." />
+              <div className="mb-5">
+                <Input type="text" placeholder="Country..." />
+              </div>
+              <div className="mb-5">
+                <Input type="text" placeholder="Competition..." />
+              </div>
+              <div className="mb-5">
+                <Input type="text" placeholder="Season..." />
+              </div>
+              <div className="mb-5">
+                <Input type="text" placeholder="Matchday..." />
+              </div>
               <Button block type="submit">
                 Send
               </Button>

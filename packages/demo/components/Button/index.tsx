@@ -12,17 +12,28 @@ export type Props = Omit<JSX.IntrinsicElements['button'], 'disabled'> & {
 }
 
 function Button(props: Props) {
-  const { block, children, disabled, isLoading, loadingText, ...otherProps } =
-    props
+  const {
+    block,
+    children,
+    className: cls,
+    disabled,
+    isLoading,
+    loadingText,
+    ...otherProps
+  } = props
 
   const isButtonDisabled = disabled || isLoading
 
-  const className = cn('bg-sky-500 px-5 py-2 text-white', {
-    'cursor-default': isButtonDisabled,
-    'hover:bg-sky-600 active:bg-sky-700': !isButtonDisabled,
-    'opacity-75': isButtonDisabled,
-    'w-full': block,
-  })
+  const className = cn(
+    'bg-sky-500 px-5 py-2 text-white',
+    {
+      'cursor-default': isButtonDisabled,
+      'hover:bg-sky-600 active:bg-sky-700': !isButtonDisabled,
+      'opacity-75': isButtonDisabled,
+      'w-full': block,
+    },
+    cls
+  )
 
   return (
     <button {...otherProps} className={className} disabled={isButtonDisabled}>

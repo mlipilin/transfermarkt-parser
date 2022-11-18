@@ -1,8 +1,11 @@
 import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
 
+import withState from 'hoc/with-state.tsx'
+
 import Input from './index'
 
-export const Template = (args) => <Input {...args} />
+export const InputWithState = withState(Input)
+export const Template = (args) => <InputWithState {...args} />
 
 <Meta
   title="Components/Input"
@@ -19,7 +22,11 @@ Here are some examples of using the component.
 <Canvas>
   <Story
     name="0_0"
-    args={{ type: 'text', placeholder: 'Type your text here...' }}
+    args={{
+      placeholder: 'Type your text here...',
+      type: 'text',
+      value: 'Some text',
+    }}
   >
     {Template.bind({})}
   </Story>

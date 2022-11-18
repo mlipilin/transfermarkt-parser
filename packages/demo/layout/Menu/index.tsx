@@ -1,10 +1,14 @@
+import cn from 'classnames'
+
 export type Props = JSX.IntrinsicElements['nav'] & {}
 
 function Menu(props: Props) {
-  const { children, ...otherProps } = props
+  const { children, className: cls, ...otherProps } = props
+
+  const className = cn('mt-8 flex gap-x-2.5', cls)
 
   return (
-    <nav {...otherProps} className="mt-8 flex gap-x-2.5">
+    <nav {...otherProps} className={className}>
       {children}
     </nav>
   )
