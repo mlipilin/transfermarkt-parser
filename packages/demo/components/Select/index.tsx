@@ -26,21 +26,19 @@ export type Props = Omit<
   JSX.IntrinsicElements['div'],
   'children' | 'onChange'
 > & {
-  /** Список значений */
+  /** Options list */
   children: Children
-  /** "disabled" состояние */
+  /** "disabled" state */
   disabled?: boolean
-  /** Текст ошибки */
+  /** Error text */
   error?: string
-  /** Маска ввода */
-  mask?: string
-  /** Текст, когда поиск не дал результатов */
+  /** No found options error */
   notFoundText?: ReactNode
-  /** Заголовок поля */
+  /** Input placeholder */
   placeholder: string
-  /** Значение */
+  /** Value */
   value?: Value
-  /** Обработчик события "change" */
+  /** "change" event handler */
   onChange?: (value: Value) => void
 }
 
@@ -50,7 +48,6 @@ function Select(props: Props) {
     className: cls,
     disabled,
     error,
-    mask,
     notFoundText,
     placeholder,
     value,
@@ -183,7 +180,6 @@ function Select(props: Props) {
     className: 'box-border pr-10 text-ellipsis',
     disabled,
     error,
-    mask,
     placeholder: valueText || placeholder,
     ref: inputRef,
     value: hasInputFocus ? inputValue : valueText,

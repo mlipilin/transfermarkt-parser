@@ -9,17 +9,17 @@ import { highlight } from 'helpers/text'
 export type Value = number | string | null | undefined
 
 export type Props = Omit<JSX.IntrinsicElements['div'], 'children'> & {
-  /** Состояние "активный" (наведена мышь или выбран стрелками) */
+  /** "active" state (mouse over or selected by arrows) */
   active?: boolean
-  /** Текст для отображения */
+  /** Text to show in this option */
   children?: string
-  /** "disabled" состояние */
+  /** "disabled" state */
   disabled?: boolean
-  /** Текст в инпуте */
+  /** Text from input */
   highlightQuery?: InputValue
-  /** Значение совпадает со значением Select */
+  /** True if Option value is same withSelect value */
   selected?: boolean
-  /** Значение */
+  /** Option value */
   value: Value
 }
 

@@ -3,7 +3,7 @@ import cn from 'classnames'
 export type Props = Omit<JSX.IntrinsicElements['button'], 'disabled'> & {
   /** Block button (full container width) */
   block?: boolean
-  /** "disabled" condition */
+  /** "disabled" state */
   disabled?: boolean
   /** Loading indicator */
   isLoading?: boolean

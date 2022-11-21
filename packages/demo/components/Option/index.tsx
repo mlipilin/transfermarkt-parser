@@ -3,7 +3,7 @@ export type Props = Omit<
   'children' | 'value'
 > & {
   children?: string
-  /** Значение */
+  /** Option value */
   value: number | string
 }
 

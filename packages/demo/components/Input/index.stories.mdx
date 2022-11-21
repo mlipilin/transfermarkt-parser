@@ -32,6 +32,20 @@ Here are some examples of using the component.
   </Story>
 </Canvas>
 
-### Props
+### Input with error
+
+<Canvas>
+  <Story
+    name="Error"
+    args={{
+      error: 'Some error text',
+      placeholder: 'Type your text here...',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
 
 <ArgsTable component={Input} />
