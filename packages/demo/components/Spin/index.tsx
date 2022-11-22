@@ -2,22 +2,21 @@ import cn from 'classnames'
 
 export type Props = JSX.IntrinsicElements['span'] & {
   /** Spin appearance */
-  appearance?: 'primary' | 'white'
+  appearance?: 'primary' | 'secondary'
   /** Spin size */
-  size?: 's' | 'm'
+  size?: 'm' | 'l'
 }
 
 function Spin(props: Props) {
   const { appearance, className: cls, size, ...otherProps } = props
-  console.log('size', size)
 
   const className = cn(
     'animate-spin border-2 flex rounded-full',
     {
       'border-gray-200 border-t-primary': appearance === 'primary',
-      'border-transparent border-t-white': appearance === 'white',
-      'h-5 w-5': size === 's',
-      'h-10 w-10': size === 'm',
+      'border-transparent border-t-white': appearance === 'secondary',
+      'h-5 w-5': size === 'm',
+      'h-10 w-10': size === 'l',
     },
     cls
   )

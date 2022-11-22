@@ -42,7 +42,7 @@ function Button(props: Props) {
     <button {...otherProps} className={className} disabled={isButtonDisabled}>
       {isLoading ? (
         <>
-          <Spin appearance="white" className="mr-2" size="s" />
+          <Spin appearance="secondary" className="mr-2" />
           {loadingText}
         </>
       ) : (

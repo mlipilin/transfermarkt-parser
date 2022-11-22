@@ -8,19 +8,25 @@ import CodeBlock from 'components/CodeBlock'
 // import Input from 'components/Input'
 import Page from 'components/Page'
 
-const USAGE_CODE = `
-import { game } from "transfermarkt-parser"
+// Utils
+import apiCall from 'utils/api-call'
 
-const games = await game.list("GB1", "2019", 3)
+const USAGE_CODE = `
+import { country } from "transfermarkt-parser"
+
+await country.list()
 `.trim()
 
 export default function Country() {
   const [isFormSubmitting, setIsFormSubmitting] = useState<boolean>(false)
-  const [responseCode] = useState<string | null>(null)
+  const [responseCode, setResponseCode] = useState<string | null>(null)
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    setIsFormSubmitting(true)
+    apiCall(setIsFormSubmitting, '/api/country/list').then((res) => {
+      console.log('res', res)
+      setResponseCode(JSON.stringify(res, null, 2))
+    })
   }
 
   return (
@@ -52,13 +58,14 @@ export default function Country() {
           </Button>
         </form>
       </Page.Sidebar>
-      <Page.Main>
+      <Page.Content>
         <CodeBlock code={USAGE_CODE} language="javascript" title="Usage" />
-        <br />
-        {!!responseCode && (
-          <CodeBlock code={responseCode} language="json" title="Response" />
+        {!isFormSubmitting && !!responseCode && (
+          <div className="mt-4">
+            <CodeBlock code={responseCode} language="json" title="Response" />
+          </div>
         )}
-      </Page.Main>
+      </Page.Content>
     </>
   )
 }

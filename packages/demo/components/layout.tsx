@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
       <Page.Container>
         <Title />
         <Menu />
-        <Page.Content>{children}</Page.Content>
+        <Page.Main>{children}</Page.Main>
       </Page.Container>
     </Page.Page>
   )

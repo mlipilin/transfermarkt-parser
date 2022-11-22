@@ -1,19 +1,19 @@
 import cn from 'classnames'
 
-export type Props = JSX.IntrinsicElements['div'] & {}
+export type Props = JSX.IntrinsicElements['main'] & {}
 
-function Content(props: Props) {
+function Main(props: Props) {
   const { children, className: cls, ...otherProps } = props
 
-  const className = cn('mt-8 flex gap-x-8', cls)
+  const className = cn('w-main max-w-main flex-auto', cls)
 
   return (
-    <div {...otherProps} className={className}>
+    <main {...otherProps} className={className}>
       {children}
-    </div>
+    </main>
   )
 }
 
-Content.defaultProps = {}
+Main.defaultProps = {}
 
-export default Content
+export default Main
