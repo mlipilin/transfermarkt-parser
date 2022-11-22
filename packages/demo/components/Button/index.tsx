@@ -1,5 +1,8 @@
 import cn from 'classnames'
 
+// Components
+import Spin from 'components/Spin'
+
 export type Props = Omit<JSX.IntrinsicElements['button'], 'disabled'> & {
   /** Block button (full container width) */
   block?: boolean
@@ -25,7 +28,7 @@ function Button(props: Props) {
   const isButtonDisabled = disabled || isLoading
 
   const className = cn(
-    'bg-sky-500 px-5 py-2 text-white',
+    'bg-sky-500 flex items-center justify-center px-5 py-2 text-white',
     {
       'cursor-default': isButtonDisabled,
       'hover:bg-sky-600 active:bg-sky-700': !isButtonDisabled,
@@ -37,7 +40,14 @@ function Button(props: Props) {
 
   return (
     <button {...otherProps} className={className} disabled={isButtonDisabled}>
-      {isLoading ? loadingText : children}
+      {isLoading ? (
+        <>
+          <Spin appearance="white" className="mr-2" size="s" />
+          {loadingText}
+        </>
+      ) : (
+        children
+      )}
     </button>
   )
 }

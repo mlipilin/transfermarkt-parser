@@ -4,10 +4,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './layout/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
+      animation: {
+        spin: 'spin 0.75s linear infinite',
+      },
       colors: {
         primary: '#1A3151',
         'primary-light': '#264064',

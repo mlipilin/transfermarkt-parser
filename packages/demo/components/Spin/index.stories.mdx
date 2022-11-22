@@ -1,0 +1,49 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Spin from './index'
+
+export const Template = (args) => <Spin {...args} />
+
+<Meta
+  title="Components/Spin"
+  component={Spin}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# Spin
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story name="0_0" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Different appearance
+
+<Canvas>
+  <Story name="Appearance_White" args={{ appearance: 'white' }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="Appearance_Primary" args={{ appearance: 'primary' }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Different sizes
+
+<Canvas>
+  <Story name="Size_S" args={{ size: 's' }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="Size_M" args={{ size: 'm' }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable component={Spin} />
