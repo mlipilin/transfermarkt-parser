@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 
 // Constants
-import { ERROR_NOT_FOUND, ERROR_SERVER } from 'constants/errors'
+import { ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/errors'
 
 function timeout(ms: number) {
   const start = Date.now()

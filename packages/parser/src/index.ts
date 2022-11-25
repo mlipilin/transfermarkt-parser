@@ -1,3 +1,3 @@
-import * as country from 'parsers/country'
+export * as country from './country'
 
-export { country }
+export * from './types'

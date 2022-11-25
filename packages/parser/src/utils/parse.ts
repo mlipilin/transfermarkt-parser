@@ -1,5 +1,9 @@
 // Constants
-import { ERROR_NOT_FOUND, ERROR_PARSING, ERROR_SERVER } from 'constants/errors'
+import {
+  ERROR_NOT_FOUND,
+  ERROR_PARSING,
+  ERROR_SERVER,
+} from '../constants/errors'
 
 export default (fn: (data: any) => any, defaultResult: any = undefined) =>
   (data: any) => {

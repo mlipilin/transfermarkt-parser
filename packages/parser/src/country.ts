@@ -1,15 +1,15 @@
 import { JSDOM } from 'jsdom'
 
 // Constants
-import { ERROR_NOT_FOUND } from 'constants/errors'
+import { ERROR_NOT_FOUND } from './constants/errors'
 
-// Entities
-import { Country, createCountry } from 'entities/country'
+// Types
+import { Country } from './types'
 
 // Utils
-import makeRequest from 'utils/make-request'
-import parse from 'utils/parse'
-import url from 'utils/url'
+import makeRequest from './utils/make-request'
+import parse from './utils/parse'
+import url from './utils/url'
 
 export function list(): Promise<Array<Country>> {
   const parseFn = parse((data) => {
@@ -27,12 +27,15 @@ export function list(): Promise<Array<Country>> {
       .map((node) => {
         const id = parseInt(node.getAttribute('value') as string)
 
-        return createCountry({
+        const entity: Country = {
           flagUrl: url.country.flag(id),
           id,
           title: node.innerHTML,
-        })
+        }
+
+        return entity
       })
   }, [])
+
   return makeRequest(url.country.list()).then(parseFn)
 }
