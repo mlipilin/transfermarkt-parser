@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
+import fetch, { RequestInfo, RequestInit } from 'node-fetch'
 
 // Constants
 import { ERROR_NOT_FOUND, ERROR_SERVER } from '../constants/errors'
@@ -12,15 +12,16 @@ function timeout(ms: number) {
 }
 
 export default async function makeRequest(
-  url: string,
-  params: AxiosRequestConfig = {}
+  url: RequestInfo,
+  init?: RequestInit
 ) {
   // It needs to pass Transfernarkt DDoS protection
   timeout(5000)
-  const response: AxiosResponse = await axios.request({ url, ...params })
-  const { data, status } = response
+  const response = await fetch(url, init)
+  const responseText = await response.text()
+  const { status } = response
   if (status >= 200 && status <= 299) {
-    return data
+    return responseText
   } else if (status === 404) {
     throw ERROR_NOT_FOUND
   }

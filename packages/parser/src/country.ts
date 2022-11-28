@@ -25,12 +25,14 @@ export function list(): Promise<Array<Country>> {
       .filter((node) => !!node.getAttribute('value'))
 
       .map((node) => {
-        const id = parseInt(node.getAttribute('value') as string)
+        const id = parseInt(
+          (node.getAttribute('value') as string).replace(/\D/g, '')
+        )
 
         const entity: Country = {
           flagUrl: url.country.flag(id),
           id,
-          title: node.innerHTML,
+          title: node.innerHTML?.replace('&lt;\\/option&gt;', ''),
         }
 
         return entity
