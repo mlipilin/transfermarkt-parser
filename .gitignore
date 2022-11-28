@@ -1,7 +1,3 @@
-# stylecode
-/.vscode
-.idea
-
 # dependencies
 /node_modules
 /common/*/node_modules
