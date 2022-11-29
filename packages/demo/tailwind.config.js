@@ -16,11 +16,18 @@ module.exports = {
         'primary-lightest': '#314F77',
       },
       maxWidth: {
-        main: '864px',
+        'main-lg': '674px',
+        'main-xl': '864px',
+      },
+      minWidth: {
+        64: '16rem',
       },
       width: {
-        container: '1280px',
-        main: '864px',
+        'container-md': '768px',
+        'container-lg': '1024px',
+        'container-xl': '1280px',
+        'main-lg': '672px',
+        'main-xl': '864px',
       },
     },
   },

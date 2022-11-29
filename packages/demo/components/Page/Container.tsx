@@ -6,7 +6,7 @@ function Container(props: Props) {
   const { children, className: cls, ...otherProps } = props
 
   const className = cn(
-    'w-container border-primary border-t-4 bg-white px-8 pt-14 pb-8',
+    'border-primary border-t-4 bg-white max-w-full py-8 px-4 md:px-8 md:pt-14 md:pb-8 w:full md:w-container-md lg:w-container-lg xl:w-container-xl',
     cls
   )
 

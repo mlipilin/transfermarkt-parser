@@ -58,14 +58,14 @@ export default function Country() {
           </Button>
         </form>
       </Page.Sidebar>
-      <Page.Content>
+      <Page.Main>
         <CodeBlock code={USAGE_CODE} language="javascript" title="Usage" />
         {!isFormSubmitting && !!responseCode && (
           <div className="mt-4">
             <CodeBlock code={responseCode} language="json" title="Response" />
           </div>
         )}
-      </Page.Content>
+      </Page.Main>
     </>
   )
 }

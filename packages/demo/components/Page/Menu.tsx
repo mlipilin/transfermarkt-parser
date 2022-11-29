@@ -5,7 +5,7 @@ export type Props = JSX.IntrinsicElements['nav'] & {}
 function Menu(props: Props) {
   const { children, className: cls, ...otherProps } = props
 
-  const className = cn('mt-8 flex gap-x-2.5', cls)
+  const className = cn('flex flex-wrap gap-2.5 mt-8', cls)
 
   return (
     <nav {...otherProps} className={className}>
