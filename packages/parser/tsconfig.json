@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "declaration": true,
+    "module": "commonjs",
+    "outDir": "build",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "include": ["src"]
+}
