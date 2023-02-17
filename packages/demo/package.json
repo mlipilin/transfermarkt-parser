@@ -18,6 +18,7 @@
     "react-custom-scrollbars-2": "^4.5.0",
     "react-dom": "18.2.0",
     "react-syntax-highlighter": "^15.5.0",
+    "swr": "^2.0.3",
     "transfermarkt-parser": "*"
   },
   "devDependencies": {

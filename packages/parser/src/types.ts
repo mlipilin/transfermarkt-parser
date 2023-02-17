@@ -1,5 +1,12 @@
+export type Competition = {
+  countryId: number
+  id?: string
+  logoUrl?: string
+  title?: string
+}
+
 export type Country = {
-  flagUrl: string | null
-  id: number | null
-  title: string | null
+  flagUrl?: string
+  id?: number
+  title?: string
 }
