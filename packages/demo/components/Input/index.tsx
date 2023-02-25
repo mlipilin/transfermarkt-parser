@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react'
+import { ChangeEvent, forwardRef } from 'react'
 
 import cn from 'classnames'
 
@@ -20,7 +20,7 @@ function checkIsEmptyValue(value: Value) {
   return [null, undefined, ''].includes(value)
 }
 
-function Input(props: Props) {
+const Input = forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     className: cls,
     error,
@@ -49,6 +49,7 @@ function Input(props: Props) {
         <input
           {...otherProps}
           className={className}
+          ref={ref}
           onChange={handleChange}
           value={!checkIsEmptyValue(value) ? (value as string) : ''}
         />
@@ -56,8 +57,10 @@ function Input(props: Props) {
       {!!error && <div className="mt-1 text-red-500 text-sm">{error}</div>}
     </div>
   )
-}
+})
 
 Input.defaultProps = {}
+
+Input.displayName = 'Input'
 
 export default Input

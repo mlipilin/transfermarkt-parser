@@ -21,7 +21,9 @@
     "react/react-in-jsx-scope": "off"
   },
   "globals": {
-    "JSX": true
+    "JSX": true,
+    "RequestInfo": true,
+    "RequestInit": true
   },
   "settings": {
     "react": {

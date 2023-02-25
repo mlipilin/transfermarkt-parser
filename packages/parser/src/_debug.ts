@@ -1,12 +1,16 @@
-import * as competition from './competition'
-import * as country from './country'
+// import * as competition from './competition'
+// import * as country from './country'
+import * as season from './season'
 
 async function debug() {
-  const countries = await country.list()
-  console.log('countries', countries)
+  // const countries = await country.list()
+  // console.log('countries', countries)
 
-  const competitions = await competition.list(189)
-  console.log('competitions', competitions)
+  // const competitions = await competition.list(189)
+  // console.log('competitions', competitions)
+
+  const seasons = await season.list('GB1')
+  console.log('seasons', seasons)
 }
 
 debug()

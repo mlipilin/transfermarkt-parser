@@ -32,6 +32,8 @@ export type Props = Omit<
   disabled?: boolean
   /** Error text */
   error?: string
+  /** Options fetching indicator */
+  isOptionsFetching?: boolean
   /** No found options error */
   notFoundText?: ReactNode
   /** Input placeholder */
@@ -48,6 +50,7 @@ function Select(props: Props) {
     className: cls,
     disabled,
     error,
+    isOptionsFetching,
     notFoundText,
     placeholder,
     value,
@@ -104,7 +107,6 @@ function Select(props: Props) {
       const wrapperTop = optionsWrapperElRect.top
       const wrapperBottom = wrapperTop + optionsWrapperElRect.height
 
-      console.log('optionsEl', optionsEl)
       if (elementTop < wrapperTop) {
         optionsEl.scrollTop = optionsEl.scrollTop - (wrapperTop - elementTop)
       } else if (elementBottom > wrapperBottom) {
@@ -152,7 +154,6 @@ function Select(props: Props) {
       }
       case 'Enter': {
         const activeOption = options[activeOptionIndex]
-        console.log('activeOption', activeOption)
         if (!activeOption) {
           return
         }
@@ -170,6 +171,7 @@ function Select(props: Props) {
   const handleOptionMouseDown = (optionProps: OptionProps) => () => {
     if (!optionProps.disabled && typeof onChange === 'function') {
       onChange(optionProps.value)
+      inputRef.current?.blur()
     }
   }
   const handleOptionMouseOver = (index: number) => () => {
@@ -230,6 +232,9 @@ function Select(props: Props) {
       <div className="Select__InputWrapper">
         <Input {...inputProps} />
       </div>
+      {isOptionsFetching && (
+        <div className="absolute animate-pulse bg-white h-full left-0 opacity-80 top-0 w-full" />
+      )}
       <div className="relative">
         <div className={optionsContainerClass} ref={optionsWrapperRef}>
           <div className={optionsListClass} ref={optionsRef}>
@@ -261,6 +266,7 @@ function Select(props: Props) {
 
 Select.defaultProps = {
   disabled: false,
+  isOptionsFetching: false,
   notFoundText: 'No options found',
   value: null,
   onChange: () => {},

@@ -10,3 +10,9 @@ export type Country = {
   id?: number
   title?: string
 }
+
+export type Season = {
+  competitionId: string
+  id?: string
+  title?: string
+}
