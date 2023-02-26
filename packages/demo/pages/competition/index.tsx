@@ -34,7 +34,7 @@ export default function Competition() {
   const usageCode = `
 import { competition } from "transfermarkt-parser"
 
-await competition.list(${countryId})
+await competition.list(${[countryId].filter((i) => !!i).join(', ')})
   `.trim()
 
   return (

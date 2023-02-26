@@ -53,14 +53,17 @@ export default function Club() {
     setSeasonId(value as string)
   }
 
-  const isShowResponse = !!seasonId
+  const isShowResponse = !!competitionId && !!seasonId
 
   const usageCode = `
 import { season } from "transfermarkt-parser"
 
-await season.list(${competitionId ? `'${competitionId}'` : null}, ${
-    seasonId ? `'${seasonId}'` : null
-  })
+await season.list(${[
+    competitionId ? `"${competitionId}"` : null,
+    seasonId ? `"${seasonId}"` : null,
+  ]
+    .filter((i) => !!i)
+    .join(', ')})
   `.trim()
 
   return (

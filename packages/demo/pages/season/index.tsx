@@ -46,7 +46,9 @@ export default function Season() {
   const usageCode = `
 import { season } from "transfermarkt-parser"
 
-await season.list(${competitionId ? `'${competitionId}'` : null})
+await season.list(${[competitionId ? `"${competitionId}"` : null]
+    .filter((i) => !!i)
+    .join(', ')})
   `.trim()
 
   return (

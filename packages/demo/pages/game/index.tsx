@@ -15,16 +15,18 @@ import Page from 'components/Page'
 import {
   Country as CountryType,
   Competition as CompetitionType,
+  Matchday as MatchdayType,
   Season as SeasonType,
 } from 'transfermarkt-parser'
 
 // URL API
 import urlApi from 'urlApi'
 
-export default function Matchday() {
+export default function Game() {
   const [countryId, setCountryId] = useState<number | null>(null)
   const [competitionId, setCompetitionId] = useState<string | null>(null)
   const [seasonId, setSeasonId] = useState<string | null>(null)
+  const [matchdayId, setMatchdayId] = useState<number | null>(null)
 
   const countries = useSWRImmutable<CountryType[]>(urlApi.country.list())
   const competitions = useSWRImmutable<CompetitionType[]>(
@@ -33,10 +35,15 @@ export default function Matchday() {
   const seasons = useSWRImmutable<SeasonType[]>(
     competitionId ? urlApi.season.list(competitionId) : null
   )
-
-  const responseCode = useSWR<string>(
+  const matchdays = useSWRImmutable<MatchdayType[]>(
     competitionId && seasonId
       ? urlApi.matchday.list(competitionId, seasonId)
+      : null
+  )
+
+  const responseCode = useSWR<string>(
+    competitionId && seasonId && matchdayId
+      ? urlApi.game.list(competitionId, seasonId, matchdayId)
       : null
   )
 
@@ -52,17 +59,23 @@ export default function Matchday() {
   }
 
   function handleSeasonIdChange(value: SelectValue) {
+    setMatchdayId(null)
     setSeasonId(value as string)
   }
 
-  const isShowResponse = !!competitionId && !!seasonId
+  function handleMatchdayIdChange(value: SelectValue) {
+    setMatchdayId(value as number)
+  }
+
+  const isShowResponse = !!competitionId && !!seasonId && !!matchdayId
 
   const usageCode = `
-import { matchday } from "transfermarkt-parser"
+import { game } from "transfermarkt-parser"
 
-await matchday.list(${[
+await game.list(${[
     competitionId ? `"${competitionId}"` : null,
     seasonId ? `"${seasonId}"` : null,
+    matchdayId,
   ]
     .filter((i) => !!i)
     .join(', ')})
@@ -71,7 +84,7 @@ await matchday.list(${[
   return (
     <>
       <Head>
-        <title>Matchday - Transfermarkt Parser</title>
+        <title>Game - Transfermarkt Parser</title>
       </Head>
       <Page.Sidebar>
         <h2 className="mb-4 text-xl">Filters</h2>
@@ -120,6 +133,24 @@ await matchday.list(${[
               {seasons.data?.map((season) => (
                 <Option key={season.id} value={season?.id ? season.id : ''}>
                   {season.title}
+                </Option>
+              )) || []}
+            </Select>
+          </div>
+          <div className="mb-5">
+            <Select
+              disabled={responseCode.isLoading || !seasonId}
+              isOptionsFetching={matchdays.isLoading}
+              placeholder="Matchday..."
+              value={matchdayId}
+              onChange={handleMatchdayIdChange}
+            >
+              {matchdays.data?.map((matchday) => (
+                <Option
+                  key={matchday.id}
+                  value={matchday?.id ? matchday.id : ''}
+                >
+                  {matchday.title}
                 </Option>
               )) || []}
             </Select>
