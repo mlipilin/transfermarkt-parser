@@ -6,8 +6,11 @@ import Head from 'next/head'
 import CodeBlock from 'components/CodeBlock'
 import Page from 'components/Page'
 
+// URL API
+import urlApi from 'urlApi'
+
 export default function Country() {
-  const responseCode = useSWR<string>('/api/country/list')
+  const responseCode = useSWR<string>(urlApi.country.list())
 
   const usageCode = `
 import { country } from "transfermarkt-parser"

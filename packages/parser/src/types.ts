@@ -1,3 +1,9 @@
+export type Club = {
+  id?: number
+  logoUrl?: string
+  title?: string
+}
+
 export type Competition = {
   countryId: number
   id?: string

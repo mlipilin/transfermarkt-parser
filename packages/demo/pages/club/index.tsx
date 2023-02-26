@@ -15,29 +15,39 @@ import Page from 'components/Page'
 import {
   Country as CountryType,
   Competition as CompetitionType,
+  Season as SeasonType,
 } from 'transfermarkt-parser'
 
 // URL API
 import urlApi from 'urlApi'
 
-export default function Season() {
+export default function Club() {
   const [competitionId, setCompetitionId] = useState<SelectValue>(null)
   const [countryId, setCountryId] = useState<SelectValue>(null)
+  const [seasonId, setSeasonId] = useState<SelectValue>(null)
 
   const countries = useSWRImmutable<CountryType[]>(urlApi.country.list())
   const competitions = useSWRImmutable<CompetitionType[]>(
     countryId !== null ? urlApi.competition.list(countryId as number) : null
   )
-  const responseCode = useSWR<string>(
+  const seasons = useSWRImmutable<SeasonType[]>(
     competitionId ? urlApi.season.list(competitionId as string) : null
   )
 
-  const isShowResponse = !!competitionId
+  const responseCode = useSWR<string>(
+    competitionId && seasonId
+      ? urlApi.club.list(competitionId as string, seasonId as string)
+      : null
+  )
+
+  const isShowResponse = !!seasonId
 
   const usageCode = `
 import { season } from "transfermarkt-parser"
 
-await season.list(${competitionId ? `'${competitionId}'` : null})
+await season.list(${competitionId ? `'${competitionId}'` : null}, ${
+    seasonId ? `'${seasonId}'` : null
+  })
   `.trim()
 
   return (
@@ -77,6 +87,21 @@ await season.list(${competitionId ? `'${competitionId}'` : null})
                   value={competition?.id ? competition.id : ''}
                 >
                   {competition.title}
+                </Option>
+              )) || []}
+            </Select>
+          </div>
+          <div className="mb-5">
+            <Select
+              disabled={responseCode.isLoading || !competitionId}
+              isOptionsFetching={seasons.isLoading}
+              placeholder="Season..."
+              value={seasonId}
+              onChange={setSeasonId}
+            >
+              {seasons.data?.map((season) => (
+                <Option key={season.id} value={season?.id ? season.id : ''}>
+                  {season.title}
                 </Option>
               )) || []}
             </Select>

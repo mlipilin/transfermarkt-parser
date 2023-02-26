@@ -36,6 +36,7 @@ export function list(countryId: number): Promise<Array<Competition>> {
         return entity
       })
   }, [])
+
   return makeRequest(url.competition.list(), {
     method: 'post',
     headers: {

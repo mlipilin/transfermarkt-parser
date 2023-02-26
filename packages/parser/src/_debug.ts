@@ -1,6 +1,7 @@
+import * as club from './club'
 // import * as competition from './competition'
 // import * as country from './country'
-import * as season from './season'
+// import * as season from './season'
 
 async function debug() {
   // const countries = await country.list()
@@ -9,8 +10,11 @@ async function debug() {
   // const competitions = await competition.list(189)
   // console.log('competitions', competitions)
 
-  const seasons = await season.list('GB1')
-  console.log('seasons', seasons)
+  // const seasons = await season.list('GB1')
+  // console.log('seasons', seasons)
+
+  const clubs = await club.list('GB1', '2022')
+  console.log('clubs', clubs)
 }
 
 debug()

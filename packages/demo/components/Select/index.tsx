@@ -191,11 +191,18 @@ function Select(props: Props) {
     onFocus: handleInputFocus,
   }
 
-  const className = cn('relative', cls)
+  const className = cn(
+    'relative',
+    {
+      'animate-pulse': isOptionsFetching,
+    },
+    cls
+  )
 
   const iconClass = cn(
     'absolute flex h-10 items-center justify-center overflow-hidden right-0 text-gray-600 w-10',
     {
+      'opacity-50': disabled,
       'text-gray-800': hasInputFocus,
     }
   )
@@ -229,11 +236,11 @@ function Select(props: Props) {
           />
         </svg>
       </span>
-      <div className="Select__InputWrapper">
+      <div className="relative Select__InputWrapper">
         <Input {...inputProps} />
       </div>
       {isOptionsFetching && (
-        <div className="absolute animate-pulse bg-white h-full left-0 opacity-80 top-0 w-full" />
+        <div className="absolute cursor-wait h-full left-0 top-0 w-full" />
       )}
       <div className="relative">
         <div className={optionsContainerClass} ref={optionsWrapperRef}>

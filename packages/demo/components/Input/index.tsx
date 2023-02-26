@@ -23,6 +23,7 @@ function checkIsEmptyValue(value: Value) {
 const Input = forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     className: cls,
+    disabled,
     error,
     value,
     onChange = () => {},
@@ -35,10 +36,12 @@ const Input = forwardRef<HTMLInputElement, Props>((props, ref) => {
   }
 
   const className = cn(
-    'block h-10 w-full border px-5 focus:outline-none',
+    'bg-transparent block h-10 w-full border px-5 focus:outline-none',
     {
       'border-gray-300 focus:border-gray-400': !error,
       'border-red-400 focus:border-red-500': error,
+      'cursor-not-allowed': disabled,
+      'opacity-50': disabled,
     },
     cls
   )
@@ -49,6 +52,7 @@ const Input = forwardRef<HTMLInputElement, Props>((props, ref) => {
         <input
           {...otherProps}
           className={className}
+          disabled={disabled}
           ref={ref}
           onChange={handleChange}
           value={!checkIsEmptyValue(value) ? (value as string) : ''}

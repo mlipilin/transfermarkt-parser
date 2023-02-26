@@ -14,12 +14,15 @@ import Select, { Value as SelectValue } from 'components/Select'
 // Types
 import { Country as CountryType } from 'transfermarkt-parser'
 
+// URL API
+import urlApi from 'urlApi'
+
 export default function Competition() {
   const [countryId, setCountryId] = useState<SelectValue>(null)
 
-  const countries = useSWRImmutable<CountryType[]>('/api/country/list')
+  const countries = useSWRImmutable<CountryType[]>(urlApi.country.list())
   const responseCode = useSWR<string>(
-    countryId ? `/api/competition/list?countryId=${countryId}` : null
+    countryId ? urlApi.competition.list(countryId as number) : null
   )
 
   const isShowResponse = !!countryId
