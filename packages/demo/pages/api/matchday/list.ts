@@ -1,9 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { club, Club } from 'transfermarkt-parser'
+import { matchday, Matchday } from 'transfermarkt-parser'
 
-type Data = Club[] | { error: string }
+type Data = Matchday[] | { error: string }
 
 export default async function handler(
   req: NextApiRequest,
@@ -22,6 +22,6 @@ export default async function handler(
 
   const competitionId = String(req.query?.competitionId)
   const seasonId = String(req.query?.seasonId)
-  const clubs = await club.list(competitionId, seasonId)
-  res.status(200).json(clubs)
+  const matchdays = await matchday.list(competitionId, seasonId)
+  res.status(200).json(matchdays)
 }

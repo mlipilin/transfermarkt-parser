@@ -21,7 +21,7 @@ import {
 // URL API
 import urlApi from 'urlApi'
 
-export default function Club() {
+export default function Matchday() {
   const [countryId, setCountryId] = useState<number | null>(null)
   const [competitionId, setCompetitionId] = useState<string | null>(null)
   const [seasonId, setSeasonId] = useState<string | null>(null)
@@ -35,7 +35,9 @@ export default function Club() {
   )
 
   const responseCode = useSWR<string>(
-    competitionId && seasonId ? urlApi.club.list(competitionId, seasonId) : null
+    competitionId && seasonId
+      ? urlApi.matchday.list(competitionId, seasonId)
+      : null
   )
 
   function handleCountryIdChange(value: SelectValue) {
@@ -56,9 +58,9 @@ export default function Club() {
   const isShowResponse = !!seasonId
 
   const usageCode = `
-import { season } from "transfermarkt-parser"
+import { matchday } from "transfermarkt-parser"
 
-await season.list(${competitionId ? `'${competitionId}'` : null}, ${
+await matchday.list(${competitionId ? `'${competitionId}'` : null}, ${
     seasonId ? `'${seasonId}'` : null
   })
   `.trim()
@@ -66,7 +68,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null}, ${
   return (
     <>
       <Head>
-        <title>Club - Transfermarkt Parser</title>
+        <title>Matchday - Transfermarkt Parser</title>
       </Head>
       <Page.Sidebar>
         <h2 className="mb-4 text-xl">Filters</h2>

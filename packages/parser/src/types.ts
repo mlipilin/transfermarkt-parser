@@ -17,6 +17,13 @@ export type Country = {
   title?: string
 }
 
+export type Matchday = {
+  competitionId: string
+  id?: number
+  seasonId?: string
+  title: string
+}
+
 export type Season = {
   competitionId: string
   id?: string
