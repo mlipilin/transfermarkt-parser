@@ -18,12 +18,16 @@ import { Country as CountryType } from 'transfermarkt-parser'
 import urlApi from 'urlApi'
 
 export default function Competition() {
-  const [countryId, setCountryId] = useState<SelectValue>(null)
+  const [countryId, setCountryId] = useState<number | null>(null)
 
   const countries = useSWRImmutable<CountryType[]>(urlApi.country.list())
   const responseCode = useSWR<string>(
-    countryId ? urlApi.competition.list(countryId as number) : null
+    countryId ? urlApi.competition.list(countryId) : null
   )
+
+  function handleCountryIdChange(value: SelectValue) {
+    setCountryId(value as number)
+  }
 
   const isShowResponse = !!countryId
 
@@ -47,7 +51,7 @@ await competition.list(${countryId})
               isOptionsFetching={countries.isLoading}
               placeholder="Country..."
               value={countryId}
-              onChange={setCountryId}
+              onChange={handleCountryIdChange}
             >
               {countries.data?.map((country) => (
                 <Option key={country.id} value={country?.id ? country.id : ''}>
@@ -61,7 +65,7 @@ await competition.list(${countryId})
       <Page.Main>
         <CodeBlock code={usageCode} language="javascript" title="Usage" />
         {isShowResponse && (
-          <div className="mt-4">
+          <div className="mt-6">
             <CodeBlock
               code={JSON.stringify(responseCode.data, null, 2)}
               isLoading={responseCode.isLoading}

@@ -21,16 +21,25 @@ import {
 import urlApi from 'urlApi'
 
 export default function Season() {
-  const [competitionId, setCompetitionId] = useState<SelectValue>(null)
-  const [countryId, setCountryId] = useState<SelectValue>(null)
+  const [competitionId, setCompetitionId] = useState<string | null>(null)
+  const [countryId, setCountryId] = useState<number | null>(null)
 
   const countries = useSWRImmutable<CountryType[]>(urlApi.country.list())
   const competitions = useSWRImmutable<CompetitionType[]>(
-    countryId !== null ? urlApi.competition.list(countryId as number) : null
+    countryId !== null ? urlApi.competition.list(countryId) : null
   )
   const responseCode = useSWR<string>(
-    competitionId ? urlApi.season.list(competitionId as string) : null
+    competitionId ? urlApi.season.list(competitionId) : null
   )
+
+  function handleCountryIdChange(value: SelectValue) {
+    setCompetitionId(null)
+    setCountryId(value as number)
+  }
+
+  function handleCompetitionIdChange(value: SelectValue) {
+    setCompetitionId(value as string)
+  }
 
   const isShowResponse = !!competitionId
 
@@ -54,7 +63,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null})
               isOptionsFetching={countries.isLoading}
               placeholder="Country..."
               value={countryId}
-              onChange={setCountryId}
+              onChange={handleCountryIdChange}
             >
               {countries.data?.map((country) => (
                 <Option key={country.id} value={country?.id ? country.id : ''}>
@@ -69,7 +78,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null})
               isOptionsFetching={competitions.isLoading}
               placeholder="Competition..."
               value={competitionId}
-              onChange={setCompetitionId}
+              onChange={handleCompetitionIdChange}
             >
               {competitions.data?.map((competition) => (
                 <Option
@@ -86,7 +95,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null})
       <Page.Main>
         <CodeBlock code={usageCode} language="javascript" title="Usage" />
         {isShowResponse && (
-          <div className="mt-4">
+          <div className="mt-6">
             <CodeBlock
               code={JSON.stringify(responseCode.data, null, 2)}
               isLoading={responseCode.isLoading}

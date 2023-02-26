@@ -26,7 +26,7 @@ await country.list()
       <Page.Sidebar />
       <Page.Main>
         <CodeBlock code={usageCode} language="javascript" title="Usage" />
-        <div className="mt-4">
+        <div className="mt-6">
           <CodeBlock
             code={JSON.stringify(responseCode.data, null, 2)}
             isLoading={responseCode.isLoading}

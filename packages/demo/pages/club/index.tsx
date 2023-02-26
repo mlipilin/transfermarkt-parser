@@ -22,23 +22,36 @@ import {
 import urlApi from 'urlApi'
 
 export default function Club() {
-  const [competitionId, setCompetitionId] = useState<SelectValue>(null)
-  const [countryId, setCountryId] = useState<SelectValue>(null)
-  const [seasonId, setSeasonId] = useState<SelectValue>(null)
+  const [countryId, setCountryId] = useState<number | null>(null)
+  const [competitionId, setCompetitionId] = useState<string | null>(null)
+  const [seasonId, setSeasonId] = useState<string | null>(null)
 
   const countries = useSWRImmutable<CountryType[]>(urlApi.country.list())
   const competitions = useSWRImmutable<CompetitionType[]>(
-    countryId !== null ? urlApi.competition.list(countryId as number) : null
+    countryId !== null ? urlApi.competition.list(countryId) : null
   )
   const seasons = useSWRImmutable<SeasonType[]>(
-    competitionId ? urlApi.season.list(competitionId as string) : null
+    competitionId ? urlApi.season.list(competitionId) : null
   )
 
   const responseCode = useSWR<string>(
-    competitionId && seasonId
-      ? urlApi.club.list(competitionId as string, seasonId as string)
-      : null
+    competitionId && seasonId ? urlApi.club.list(competitionId, seasonId) : null
   )
+
+  function handleCountryIdChange(value: SelectValue) {
+    setCompetitionId(null)
+    setSeasonId(null)
+    setCountryId(value as number)
+  }
+
+  function handleCompetitionIdChange(value: SelectValue) {
+    setSeasonId(null)
+    setCompetitionId(value as string)
+  }
+
+  function handleSeasonIdChange(value: SelectValue) {
+    setSeasonId(value as string)
+  }
 
   const isShowResponse = !!seasonId
 
@@ -64,7 +77,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null}, ${
               isOptionsFetching={countries.isLoading}
               placeholder="Country..."
               value={countryId}
-              onChange={setCountryId}
+              onChange={handleCountryIdChange}
             >
               {countries.data?.map((country) => (
                 <Option key={country.id} value={country?.id ? country.id : ''}>
@@ -79,7 +92,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null}, ${
               isOptionsFetching={competitions.isLoading}
               placeholder="Competition..."
               value={competitionId}
-              onChange={setCompetitionId}
+              onChange={handleCompetitionIdChange}
             >
               {competitions.data?.map((competition) => (
                 <Option
@@ -97,7 +110,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null}, ${
               isOptionsFetching={seasons.isLoading}
               placeholder="Season..."
               value={seasonId}
-              onChange={setSeasonId}
+              onChange={handleSeasonIdChange}
             >
               {seasons.data?.map((season) => (
                 <Option key={season.id} value={season?.id ? season.id : ''}>
@@ -111,7 +124,7 @@ await season.list(${competitionId ? `'${competitionId}'` : null}, ${
       <Page.Main>
         <CodeBlock code={usageCode} language="javascript" title="Usage" />
         {isShowResponse && (
-          <div className="mt-4">
+          <div className="mt-6">
             <CodeBlock
               code={JSON.stringify(responseCode.data, null, 2)}
               isLoading={responseCode.isLoading}

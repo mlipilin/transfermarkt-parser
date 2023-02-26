@@ -172,6 +172,8 @@ function Select(props: Props) {
     if (!optionProps.disabled && typeof onChange === 'function') {
       onChange(optionProps.value)
       inputRef.current?.blur()
+      setInputValue(null)
+      setActiveOptionIndex(activeOptionIndex)
     }
   }
   const handleOptionMouseOver = (index: number) => () => {
