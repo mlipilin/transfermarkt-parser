@@ -1,0 +1,1271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list country.list() -> full list of countries 1`] = `
+[
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/1.png",
+    "id": 1,
+    "title": "Afghanistan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/3.png",
+    "id": 3,
+    "title": "Albania",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/4.png",
+    "id": 4,
+    "title": "Algeria",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/239.png",
+    "id": 239,
+    "title": "American Samoa",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/234.png",
+    "id": 234,
+    "title": "American Virgin Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/5.png",
+    "id": 5,
+    "title": "Andorra",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/6.png",
+    "id": 6,
+    "title": "Angola",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/232.png",
+    "id": 232,
+    "title": "Anguilla",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/7.png",
+    "id": 7,
+    "title": "Antigua and Barbuda",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/9.png",
+    "id": 9,
+    "title": "Argentina",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/10.png",
+    "id": 10,
+    "title": "Armenia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/233.png",
+    "id": 233,
+    "title": "Aruba",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/12.png",
+    "id": 12,
+    "title": "Australia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/127.png",
+    "id": 127,
+    "title": "Austria",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/13.png",
+    "id": 13,
+    "title": "Azerbaijan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/14.png",
+    "id": 14,
+    "title": "Bahamas",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/15.png",
+    "id": 15,
+    "title": "Bahrain",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/16.png",
+    "id": 16,
+    "title": "Bangladesh",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/17.png",
+    "id": 17,
+    "title": "Barbados",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/18.png",
+    "id": 18,
+    "title": "Belarus",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/19.png",
+    "id": 19,
+    "title": "Belgium",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/20.png",
+    "id": 20,
+    "title": "Belize",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/21.png",
+    "id": 21,
+    "title": "Benin",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/211.png",
+    "id": 211,
+    "title": "Bermuda",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/22.png",
+    "id": 22,
+    "title": "Bhutan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/23.png",
+    "id": 23,
+    "title": "Bolivia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/269.png",
+    "id": 269,
+    "title": "Bonaire",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/24.png",
+    "id": 24,
+    "title": "Bosnia-Herzegovina",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/25.png",
+    "id": 25,
+    "title": "Botsuana",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/26.png",
+    "id": 26,
+    "title": "Brazil",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/276.png",
+    "id": 276,
+    "title": "British India",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/231.png",
+    "id": 231,
+    "title": "British Virgin Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/27.png",
+    "id": 27,
+    "title": "Brunei Darussalam",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/28.png",
+    "id": 28,
+    "title": "Bulgaria",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/29.png",
+    "id": 29,
+    "title": "Burkina Faso",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/30.png",
+    "id": 30,
+    "title": "Burundi",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/79.png",
+    "id": 79,
+    "title": "Cambodia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/31.png",
+    "id": 31,
+    "title": "Cameroon",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/80.png",
+    "id": 80,
+    "title": "Canada",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/32.png",
+    "id": 32,
+    "title": "Cape Verde",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/229.png",
+    "id": 229,
+    "title": "Cayman Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/138.png",
+    "id": 138,
+    "title": "Central African Republic",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/171.png",
+    "id": 171,
+    "title": "Chad",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/33.png",
+    "id": 33,
+    "title": "Chile",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/34.png",
+    "id": 34,
+    "title": "China",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/164.png",
+    "id": 164,
+    "title": "Chinese Taipei",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/248.png",
+    "id": 248,
+    "title": "Christmas Island",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/83.png",
+    "id": 83,
+    "title": "Colombia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/35.png",
+    "id": 35,
+    "title": "Comoros",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/85.png",
+    "id": 85,
+    "title": "Congo",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/238.png",
+    "id": 238,
+    "title": "Cookinseln",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/36.png",
+    "id": 36,
+    "title": "Costa Rica",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/38.png",
+    "id": 38,
+    "title": "Cote d'Ivoire",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/37.png",
+    "id": 37,
+    "title": "Croatia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/220.png",
+    "id": 220,
+    "title": "CSSR",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/88.png",
+    "id": 88,
+    "title": "Cuba",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/260.png",
+    "id": 260,
+    "title": "Curacao",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/188.png",
+    "id": 188,
+    "title": "Cyprus",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/172.png",
+    "id": 172,
+    "title": "Czech Republic",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/39.png",
+    "id": 39,
+    "title": "Denmark",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/41.png",
+    "id": 41,
+    "title": "Djibouti",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/42.png",
+    "id": 42,
+    "title": "Dominica",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/43.png",
+    "id": 43,
+    "title": "Dominican Republic",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/193.png",
+    "id": 193,
+    "title": "DR Congo",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/222.png",
+    "id": 222,
+    "title": "East Germany (GDR)",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/44.png",
+    "id": 44,
+    "title": "Ecuador",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/2.png",
+    "id": 2,
+    "title": "Egypt",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/45.png",
+    "id": 45,
+    "title": "El Salvador",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/189.png",
+    "id": 189,
+    "title": "England",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/8.png",
+    "id": 8,
+    "title": "Equatorial Guinea",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/46.png",
+    "id": 46,
+    "title": "Eritrea",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/47.png",
+    "id": 47,
+    "title": "Estonia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/162.png",
+    "id": 162,
+    "title": "Eswatini",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/11.png",
+    "id": 11,
+    "title": "Ethiopia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/250.png",
+    "id": 250,
+    "title": "Falkland Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/208.png",
+    "id": 208,
+    "title": "Faroe Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/111.png",
+    "id": 111,
+    "title": "Federated States of Micronesia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/48.png",
+    "id": 48,
+    "title": "Fiji",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/49.png",
+    "id": 49,
+    "title": "Finland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/50.png",
+    "id": 50,
+    "title": "France",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/252.png",
+    "id": 252,
+    "title": "French Guiana",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/51.png",
+    "id": 51,
+    "title": "Gabon",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/53.png",
+    "id": 53,
+    "title": "Georgia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/40.png",
+    "id": 40,
+    "title": "Germany",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/54.png",
+    "id": 54,
+    "title": "Ghana",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/266.png",
+    "id": 266,
+    "title": "Gibraltar",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/56.png",
+    "id": 56,
+    "title": "Greece",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/243.png",
+    "id": 243,
+    "title": "Greenland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/55.png",
+    "id": 55,
+    "title": "Grenada",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/251.png",
+    "id": 251,
+    "title": "Guadeloupe",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/241.png",
+    "id": 241,
+    "title": "Guam",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/58.png",
+    "id": 58,
+    "title": "Guatemala",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/271.png",
+    "id": 271,
+    "title": "Guernsey",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/59.png",
+    "id": 59,
+    "title": "Guinea",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/60.png",
+    "id": 60,
+    "title": "Guinea-Bissau",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/61.png",
+    "id": 61,
+    "title": "Guyana",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/62.png",
+    "id": 62,
+    "title": "Haiti",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/66.png",
+    "id": 66,
+    "title": "Honduras",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/218.png",
+    "id": 218,
+    "title": "Hongkong",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/178.png",
+    "id": 178,
+    "title": "Hungary",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/73.png",
+    "id": 73,
+    "title": "Iceland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/67.png",
+    "id": 67,
+    "title": "India",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/68.png",
+    "id": 68,
+    "title": "Indonesia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/71.png",
+    "id": 71,
+    "title": "Iran",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/70.png",
+    "id": 70,
+    "title": "Iraq",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/72.png",
+    "id": 72,
+    "title": "Ireland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/270.png",
+    "id": 270,
+    "title": "Isle of Man",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/74.png",
+    "id": 74,
+    "title": "Israel",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/75.png",
+    "id": 75,
+    "title": "Italy",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/76.png",
+    "id": 76,
+    "title": "Jamaica",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/77.png",
+    "id": 77,
+    "title": "Japan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/272.png",
+    "id": 272,
+    "title": "Jersey",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/78.png",
+    "id": 78,
+    "title": "Jordan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/223.png",
+    "id": 223,
+    "title": "Jugoslawien (SFR)",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/81.png",
+    "id": 81,
+    "title": "Kazakhstan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/82.png",
+    "id": 82,
+    "title": "Kenya",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/246.png",
+    "id": 246,
+    "title": "Kiribati",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/86.png",
+    "id": 86,
+    "title": "Korea, North",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/87.png",
+    "id": 87,
+    "title": "Korea, South",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/244.png",
+    "id": 244,
+    "title": "Kosovo",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/89.png",
+    "id": 89,
+    "title": "Kuwait",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/90.png",
+    "id": 90,
+    "title": "Kyrgyzstan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/91.png",
+    "id": 91,
+    "title": "Laos",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/92.png",
+    "id": 92,
+    "title": "Latvia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/94.png",
+    "id": 94,
+    "title": "Lebanon",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/93.png",
+    "id": 93,
+    "title": "Lesotho",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/95.png",
+    "id": 95,
+    "title": "Liberia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/96.png",
+    "id": 96,
+    "title": "Libya",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/97.png",
+    "id": 97,
+    "title": "Liechtenstein",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/98.png",
+    "id": 98,
+    "title": "Lithuania",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/99.png",
+    "id": 99,
+    "title": "Luxembourg",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/219.png",
+    "id": 219,
+    "title": "Macao",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/274.png",
+    "id": 274,
+    "title": "Macedonia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/101.png",
+    "id": 101,
+    "title": "Madagascar",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/102.png",
+    "id": 102,
+    "title": "Malawi",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/103.png",
+    "id": 103,
+    "title": "Malaysia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/104.png",
+    "id": 104,
+    "title": "Maldives",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/105.png",
+    "id": 105,
+    "title": "Mali",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/106.png",
+    "id": 106,
+    "title": "Malta",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/257.png",
+    "id": 257,
+    "title": "Marshall Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/207.png",
+    "id": 207,
+    "title": "Martinique",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/108.png",
+    "id": 108,
+    "title": "Mauritania",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/109.png",
+    "id": 109,
+    "title": "Mauritius",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/277.png",
+    "id": 277,
+    "title": "Mayotte",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/110.png",
+    "id": 110,
+    "title": "Mexico",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/112.png",
+    "id": 112,
+    "title": "Moldova",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/113.png",
+    "id": 113,
+    "title": "Monaco",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/114.png",
+    "id": 114,
+    "title": "Mongolia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/216.png",
+    "id": 216,
+    "title": "Montenegro",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/235.png",
+    "id": 235,
+    "title": "Montserrat",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/107.png",
+    "id": 107,
+    "title": "Morocco",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/115.png",
+    "id": 115,
+    "title": "Mozambique",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/116.png",
+    "id": 116,
+    "title": "Myanmar",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/117.png",
+    "id": 117,
+    "title": "Namibia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/118.png",
+    "id": 118,
+    "title": "Nauru",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/119.png",
+    "id": 119,
+    "title": "Nepal",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/122.png",
+    "id": 122,
+    "title": "Netherlands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/227.png",
+    "id": 227,
+    "title": "Netherlands Antilles",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/255.png",
+    "id": 255,
+    "title": "Netherlands East India",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/236.png",
+    "id": 236,
+    "title": "Neukaledonien",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/120.png",
+    "id": 120,
+    "title": "New Zealand",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/121.png",
+    "id": 121,
+    "title": "Nicaragua",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/123.png",
+    "id": 123,
+    "title": "Niger",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/124.png",
+    "id": 124,
+    "title": "Nigeria",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/261.png",
+    "id": 261,
+    "title": "Niue",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/100.png",
+    "id": 100,
+    "title": "North Macedonia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/192.png",
+    "id": 192,
+    "title": "Northern Ireland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/268.png",
+    "id": 268,
+    "title": "Northern Mariana Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/125.png",
+    "id": 125,
+    "title": "Norway",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/126.png",
+    "id": 126,
+    "title": "Oman",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/128.png",
+    "id": 128,
+    "title": "Pakistan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/129.png",
+    "id": 129,
+    "title": "Palau",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/240.png",
+    "id": 240,
+    "title": "Palestine",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/130.png",
+    "id": 130,
+    "title": "Panama",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/131.png",
+    "id": 131,
+    "title": "Papua New Guinea",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/132.png",
+    "id": 132,
+    "title": "Paraguay",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/259.png",
+    "id": 259,
+    "title": "People's republic of the Congo",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/133.png",
+    "id": 133,
+    "title": "Peru",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/134.png",
+    "id": 134,
+    "title": "Philippines",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/135.png",
+    "id": 135,
+    "title": "Poland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/136.png",
+    "id": 136,
+    "title": "Portugal",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/228.png",
+    "id": 228,
+    "title": "Puerto Rico",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/137.png",
+    "id": 137,
+    "title": "Qatar",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/249.png",
+    "id": 249,
+    "title": "R\\u00e9union",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/140.png",
+    "id": 140,
+    "title": "Romania",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/141.png",
+    "id": 141,
+    "title": "Russia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/139.png",
+    "id": 139,
+    "title": "Rwanda",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/263.png",
+    "id": 263,
+    "title": "Saarland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/267.png",
+    "id": 267,
+    "title": "Saint-Martin",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/143.png",
+    "id": 143,
+    "title": "Samoa",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/144.png",
+    "id": 144,
+    "title": "San Marino",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/145.png",
+    "id": 145,
+    "title": "Sao Tome and Principe",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/146.png",
+    "id": 146,
+    "title": "Saudi Arabia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/190.png",
+    "id": 190,
+    "title": "Scotland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/149.png",
+    "id": 149,
+    "title": "Senegal",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/215.png",
+    "id": 215,
+    "title": "Serbia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/150.png",
+    "id": 150,
+    "title": "Serbia and Montenegro",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/151.png",
+    "id": 151,
+    "title": "Seychelles",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/152.png",
+    "id": 152,
+    "title": "Sierra Leone",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/153.png",
+    "id": 153,
+    "title": "Singapore",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/265.png",
+    "id": 265,
+    "title": "Sint Maarten",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/154.png",
+    "id": 154,
+    "title": "Slovakia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/155.png",
+    "id": 155,
+    "title": "Slovenia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/69.png",
+    "id": 69,
+    "title": "Solomon Islands",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/156.png",
+    "id": 156,
+    "title": "Somalia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/159.png",
+    "id": 159,
+    "title": "South Africa",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/262.png",
+    "id": 262,
+    "title": "Southern Sudan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/157.png",
+    "id": 157,
+    "title": "Spain",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/158.png",
+    "id": 158,
+    "title": "Sri Lanka",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/225.png",
+    "id": 225,
+    "title": "St. Kitts &amp; Nevis",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/230.png",
+    "id": 230,
+    "title": "St. Lucia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/224.png",
+    "id": 224,
+    "title": "St. Vincent &amp; Grenadinen",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/160.png",
+    "id": 160,
+    "title": "Sudan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/161.png",
+    "id": 161,
+    "title": "Suriname",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/273.png",
+    "id": 273,
+    "title": "Swaziland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/147.png",
+    "id": 147,
+    "title": "Sweden",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/148.png",
+    "id": 148,
+    "title": "Switzerland",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/163.png",
+    "id": 163,
+    "title": "Syria",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/237.png",
+    "id": 237,
+    "title": "Tahiti",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/165.png",
+    "id": 165,
+    "title": "Tajikistan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/166.png",
+    "id": 166,
+    "title": "Tanzania",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/167.png",
+    "id": 167,
+    "title": "Thailand",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/52.png",
+    "id": 52,
+    "title": "The Gambia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/245.png",
+    "id": 245,
+    "title": "Tibet",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/242.png",
+    "id": 242,
+    "title": "Timor-Leste",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/168.png",
+    "id": 168,
+    "title": "Togo",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/169.png",
+    "id": 169,
+    "title": "Tonga",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/170.png",
+    "id": 170,
+    "title": "Trinidad and Tobago",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/173.png",
+    "id": 173,
+    "title": "Tunisia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/174.png",
+    "id": 174,
+    "title": "Turkey",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/175.png",
+    "id": 175,
+    "title": "Turkmenistan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/226.png",
+    "id": 226,
+    "title": "Turks- and Caicosinseln",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/247.png",
+    "id": 247,
+    "title": "Tuvalu",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/221.png",
+    "id": 221,
+    "title": "UdSSR",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/176.png",
+    "id": 176,
+    "title": "Uganda",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/177.png",
+    "id": 177,
+    "title": "Ukraine",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/183.png",
+    "id": 183,
+    "title": "United Arab Emirates",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/264.png",
+    "id": 264,
+    "title": "United Kingdom",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/184.png",
+    "id": 184,
+    "title": "United States",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/179.png",
+    "id": 179,
+    "title": "Uruguay",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/180.png",
+    "id": 180,
+    "title": "Uzbekistan",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/181.png",
+    "id": 181,
+    "title": "Vanuatu",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/256.png",
+    "id": 256,
+    "title": "Vatican",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/182.png",
+    "id": 182,
+    "title": "Venezuela",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/185.png",
+    "id": 185,
+    "title": "Vietnam",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/191.png",
+    "id": 191,
+    "title": "Wales",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/275.png",
+    "id": 275,
+    "title": "Western Sahara",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/186.png",
+    "id": 186,
+    "title": "Yemen",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/258.png",
+    "id": 258,
+    "title": "Yugoslavia (Republic)",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/254.png",
+    "id": 254,
+    "title": "Zaire",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/142.png",
+    "id": 142,
+    "title": "Zambia",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/253.png",
+    "id": 253,
+    "title": "Zanzibar",
+  },
+  {
+    "flagUrl": "https://tmssl.akamaized.net//images/flagge/small/187.png",
+    "id": 187,
+    "title": "Zimbabwe"",
+  },
+]
+`;

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list club.list("GB1", "2022") -> list of clubs for EPL (season 22/23) 1`] = `
+[
+  {
+    "id": 281,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/281.png",
+    "title": "Manchester City",
+  },
+  {
+    "id": 631,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/631.png",
+    "title": "Chelsea FC",
+  },
+  {
+    "id": 31,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/31.png",
+    "title": "Liverpool FC",
+  },
+  {
+    "id": 11,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/11.png",
+    "title": "Arsenal FC",
+  },
+  {
+    "id": 985,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/985.png",
+    "title": "Manchester United",
+  },
+  {
+    "id": 148,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/148.png",
+    "title": "Tottenham Hotspur",
+  },
+  {
+    "id": 762,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/762.png",
+    "title": "Newcastle United",
+  },
+  {
+    "id": 379,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/379.png",
+    "title": "West Ham United",
+  },
+  {
+    "id": 1003,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/1003.png",
+    "title": "Leicester City",
+  },
+  {
+    "id": 405,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/405.png",
+    "title": "Aston Villa",
+  },
+  {
+    "id": 543,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/543.png",
+    "title": "Wolverhampton Wanderers",
+  },
+  {
+    "id": 180,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/180.png",
+    "title": "Southampton FC",
+  },
+  {
+    "id": 29,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/29.png",
+    "title": "Everton FC",
+  },
+  {
+    "id": 703,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/703.png",
+    "title": "Nottingham Forest",
+  },
+  {
+    "id": 873,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/873.png",
+    "title": "Crystal Palace",
+  },
+  {
+    "id": 1237,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/1237.png",
+    "title": "Brighton &amp; Hove Albion",
+  },
+  {
+    "id": 1148,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/1148.png",
+    "title": "Brentford FC",
+  },
+  {
+    "id": 399,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/399.png",
+    "title": "Leeds United",
+  },
+  {
+    "id": 931,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/931.png",
+    "title": "Fulham FC",
+  },
+  {
+    "id": 989,
+    "logoUrl": "https://tmssl.akamaized.net//images/wappen/head/989.png",
+    "title": "AFC Bournemouth",
+  },
+]
+`;
+
+exports[`list club.list("wrongCompetitionId", "wrongSeasonId") -> [] 1`] = `[]`;
+
+exports[`list club.list() -> [] 1`] = `[]`;

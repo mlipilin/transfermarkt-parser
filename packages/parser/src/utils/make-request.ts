@@ -16,7 +16,8 @@ export default async function makeRequest(
   init?: RequestInit
 ) {
   // It needs to pass Transfernarkt DDoS protection
-  timeout(5000)
+  timeout(Number(process.env.TRANSFERMARKT_DDOS_TIMEOUT) || 0)
+
   const response = await fetch(url, init)
   const responseText = await response.text()
   const { status } = response

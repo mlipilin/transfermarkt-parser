@@ -13,6 +13,8 @@ import parse from './utils/parse'
 import url from './utils/url'
 
 export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
+  const defaultResponse = []
+
   const parseFn = parse((data) => {
     if (!data) {
       throw ERROR_NOT_FOUND
@@ -88,7 +90,9 @@ export function list(clubId: number, seasonId: string): Promise<Array<Player>> {
           position,
         }
       })
-  }, [])
+  }, defaultResponse)
 
-  return makeRequest(url.player.list(clubId, seasonId)).then(parseFn)
+  return makeRequest(url.player.list(clubId, seasonId))
+    .then(parseFn)
+    .catch(() => defaultResponse)
 }

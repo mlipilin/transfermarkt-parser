@@ -15,6 +15,8 @@ export function list(
   competitionId: string,
   seasonId: string
 ): Promise<Array<Matchday>> {
+  const defaultResponse = []
+
   const parseFn = parse((data) => {
     if (!data) {
       throw ERROR_NOT_FOUND
@@ -41,7 +43,9 @@ export function list(
     }
 
     return matchdays
-  }, [])
+  }, defaultResponse)
 
-  return makeRequest(url.matchday.list(competitionId, seasonId)).then(parseFn)
+  return makeRequest(url.matchday.list(competitionId, seasonId))
+    .then(parseFn)
+    .catch(() => defaultResponse)
 }

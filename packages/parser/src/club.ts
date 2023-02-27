@@ -15,6 +15,8 @@ export function list(
   competitionId: string,
   seasonId: string
 ): Promise<Array<Club>> {
+  const defaultResponse = []
+
   const parseFn = parse((data) => {
     if (!data) {
       throw ERROR_NOT_FOUND
@@ -53,9 +55,9 @@ export function list(
           title: linkNode.innerHTML,
         }
       })
-  }, [])
+  }, defaultResponse)
 
-  const requestUrl = url.club.list(competitionId, seasonId)
-  console.log('requestUrl', requestUrl)
-  return makeRequest(url.club.list(competitionId, seasonId)).then(parseFn)
+  return makeRequest(url.club.list(competitionId, seasonId))
+    .then(parseFn)
+    .catch(() => defaultResponse)
 }

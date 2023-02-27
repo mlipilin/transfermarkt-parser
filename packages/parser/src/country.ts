@@ -12,6 +12,8 @@ import parse from './utils/parse'
 import url from './utils/url'
 
 export function list(): Promise<Array<Country>> {
+  const defaultResponse = []
+
   const parseFn = parse((data) => {
     if (!data) {
       throw ERROR_NOT_FOUND
@@ -37,7 +39,9 @@ export function list(): Promise<Array<Country>> {
 
         return entity
       })
-  }, [])
+  }, defaultResponse)
 
-  return makeRequest(url.country.list()).then(parseFn)
+  return makeRequest(url.country.list())
+    .then(parseFn)
+    .catch(() => defaultResponse)
 }

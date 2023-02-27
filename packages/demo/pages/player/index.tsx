@@ -73,10 +73,7 @@ export default function Player() {
   const usageCode = `
 import { player } from "transfermarkt-parser"
 
-await player.list(${[
-    clubId ? `"${clubId}"` : null,
-    seasonId ? `"${seasonId}"` : null,
-  ]
+await player.list(${[clubId, seasonId ? `"${seasonId}"` : null]
     .filter((i) => !!i)
     .join(', ')})
   `.trim()

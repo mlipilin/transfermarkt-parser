@@ -12,6 +12,8 @@ import parse from './utils/parse'
 import url from './utils/url'
 
 export function list(competitionId: string): Promise<Array<Season>> {
+  const defaultResponse = []
+
   const parseFn = parse((data) => {
     if (!data) {
       throw ERROR_NOT_FOUND
@@ -38,7 +40,9 @@ export function list(competitionId: string): Promise<Array<Season>> {
         id: node.getAttribute('value'),
         title: node.innerHTML,
       }))
-  }, [])
+  }, defaultResponse)
 
-  return makeRequest(url.season.list(competitionId)).then(parseFn)
+  return makeRequest(url.season.list(competitionId))
+    .then(parseFn)
+    .catch(() => defaultResponse)
 }

@@ -12,6 +12,8 @@ import parse from './utils/parse'
 import url from './utils/url'
 
 export function list(countryId: number): Promise<Array<Competition>> {
+  const defaultResponse = []
+
   const parseFn = parse((data) => {
     if (!data) {
       throw ERROR_NOT_FOUND
@@ -35,7 +37,7 @@ export function list(countryId: number): Promise<Array<Competition>> {
 
         return entity
       })
-  }, [])
+  }, defaultResponse)
 
   return makeRequest(url.competition.list(), {
     method: 'post',
@@ -43,5 +45,7 @@ export function list(countryId: number): Promise<Array<Competition>> {
       'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
     },
     body: `land_id=${countryId}`,
-  }).then(parseFn)
+  })
+    .then(parseFn)
+    .catch(() => defaultResponse)
 }
