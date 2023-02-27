@@ -3,6 +3,7 @@ export * as competition from './competition'
 export * as country from './country'
 export * as game from './game'
 export * as matchday from './matchday'
+export * as player from './player'
 export * as season from './season'
 
 export * from './types'

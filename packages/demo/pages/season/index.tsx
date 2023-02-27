@@ -41,7 +41,7 @@ export default function Season() {
     setCompetitionId(value as string)
   }
 
-  const isShowResponse = !!competitionId
+  const isShowResponse = !!countryId && !!competitionId
 
   const usageCode = `
 import { season } from "transfermarkt-parser"

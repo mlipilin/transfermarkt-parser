@@ -55,7 +55,7 @@ export default function Matchday() {
     setSeasonId(value as string)
   }
 
-  const isShowResponse = !!competitionId && !!seasonId
+  const isShowResponse = !!countryId && !!competitionId && !!seasonId
 
   const usageCode = `
 import { matchday } from "transfermarkt-parser"

@@ -35,6 +35,16 @@ export type Matchday = {
   title: string
 }
 
+export type Player = {
+  birthday?: string
+  id?: number
+  name?: string
+  nationalities?: string[]
+  number?: number
+  photoUrl?: string
+  position?: string
+}
+
 export type Season = {
   competitionId: string
   id?: string

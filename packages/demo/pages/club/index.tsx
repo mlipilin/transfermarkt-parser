@@ -53,7 +53,7 @@ export default function Club() {
     setSeasonId(value as string)
   }
 
-  const isShowResponse = !!competitionId && !!seasonId
+  const isShowResponse = !!countryId && !!competitionId && !!seasonId
 
   const usageCode = `
 import { season } from "transfermarkt-parser"

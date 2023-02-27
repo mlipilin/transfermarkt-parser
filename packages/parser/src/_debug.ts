@@ -1,8 +1,9 @@
 // import * as club from './club'
 // import * as competition from './competition'
 // import * as country from './country'
-import * as game from './game'
+// import * as game from './game'
 // import * as matchday from './matchday'
+import * as player from './player'
 // import * as season from './season'
 
 async function debug() {
@@ -21,8 +22,11 @@ async function debug() {
   // const matchdays = await matchday.list('GB1', '2022')
   // console.log('matchdays', matchdays)
 
-  const games = await game.list('GB1', '2022', 1)
-  console.log('games', games)
+  // const games = await game.list('GB1', '2022', 1)
+  // console.log('games', games)
+
+  const players = await player.list(281, '2022')
+  console.log('players', players)
 }
 
 debug()
