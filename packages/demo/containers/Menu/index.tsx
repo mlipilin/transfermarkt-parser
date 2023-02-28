@@ -6,7 +6,7 @@ import MenuItem from 'components/MenuItem'
 import Page from 'components/Page'
 
 const MENU_ITEMS = [
-  { href: '/country', name: 'Country' },
+  { href: '/', name: 'Country' },
   { href: '/competition', name: 'Competition' },
   { href: '/season', name: 'Season' },
   { href: '/club', name: 'Club' },

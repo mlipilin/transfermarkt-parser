@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list player.list("-999", "wrongSeasonId") -> [] 1`] = `[]`;
+
+exports[`list player.list("GB1", "2022") -> list of players for Man. City (season 22/23) 1`] = `
+[
+  {
+    "birthday": "1993-08-17",
+    "id": 238223,
+    "name": "Ederson",
+    "nationalities": [
+      "Brazil",
+      "Portugal",
+    ],
+    "number": 31,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/238223-1661978747.jpg?lm=1",
+    "position": "Goalkeeper",
+  },
+  {
+    "birthday": "1992-11-06",
+    "id": 85941,
+    "name": "Stefan Ortega",
+    "nationalities": [
+      "Germany",
+      "Spain",
+    ],
+    "number": 18,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/85941-1668065114.jpg?lm=1",
+    "position": "Goalkeeper",
+  },
+  {
+    "birthday": "1985-09-03",
+    "id": 14555,
+    "name": "Scott Carson",
+    "nationalities": [
+      "England",
+    ],
+    "number": 33,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/14555-1666733622.jpg?lm=1",
+    "position": "Goalkeeper",
+  },
+  {
+    "birthday": "1997-05-14",
+    "id": 258004,
+    "name": "Rúben Dias",
+    "nationalities": [
+      "Portugal",
+    ],
+    "number": 3,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/258004-1661442106.jpg?lm=1",
+    "position": "Centre-Back",
+  },
+  {
+    "birthday": "1994-05-27",
+    "id": 176553,
+    "name": "Aymeric Laporte",
+    "nationalities": [
+      "Spain",
+      "France",
+    ],
+    "number": 14,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/176553-1564994239.jpg?lm=1",
+    "position": "Centre-Back",
+  },
+  {
+    "birthday": "1994-05-28",
+    "id": 186590,
+    "name": "John Stones",
+    "nationalities": [
+      "England",
+    ],
+    "number": 5,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/186590-1583400326.jpg?lm=1",
+    "position": "Centre-Back",
+  },
+  {
+    "birthday": "1995-02-18",
+    "id": 177476,
+    "name": "Nathan Aké",
+    "nationalities": [
+      "Netherlands",
+      "Cote d'Ivoire",
+    ],
+    "number": 6,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/177476-1666733797.jpg?lm=1",
+    "position": "Centre-Back",
+  },
+  {
+    "birthday": "1995-07-19",
+    "id": 284730,
+    "name": "Manuel Akanji",
+    "nationalities": [
+      "Switzerland",
+      "Nigeria",
+    ],
+    "number": 25,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/284730-1615389562.jpg?lm=1",
+    "position": "Centre-Back",
+  },
+  {
+    "birthday": "2000-09-04",
+    "id": 366930,
+    "name": "Sergio Gómez",
+    "nationalities": [
+      "Spain",
+    ],
+    "number": 21,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/366930-1660209686.jpg?lm=1",
+    "position": "Left-Back",
+  },
+  {
+    "birthday": "1994-07-17",
+    "id": 157495,
+    "name": "Benjamin Mendy",
+    "nationalities": [
+      "France",
+      "Senegal",
+    ],
+    "number": 22,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/157495-1598301159.jpg?lm=1",
+    "position": "Left-Back",
+  },
+  {
+    "birthday": "1990-05-28",
+    "id": 95424,
+    "name": "Kyle Walker",
+    "nationalities": [
+      "England",
+    ],
+    "number": 2,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/95424-1668090663.jpg?lm=1",
+    "position": "Right-Back",
+  },
+  {
+    "birthday": "2004-11-21",
+    "id": 701057,
+    "name": "Rico Lewis",
+    "nationalities": [
+      "England",
+    ],
+    "number": 82,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/701057-1660637685.jpg?lm=1",
+    "position": "Right-Back",
+  },
+  {
+    "birthday": "1996-06-22",
+    "id": 357565,
+    "name": "Rodri",
+    "nationalities": [
+      "Spain",
+    ],
+    "number": 16,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/357565-1668168488.jpg?lm=1",
+    "position": "Defensive Midfield",
+  },
+  {
+    "birthday": "1995-12-02",
+    "id": 351749,
+    "name": "Kalvin Phillips",
+    "nationalities": [
+      "England",
+      "Jamaica",
+    ],
+    "number": 4,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/351749-1661978510.jpg?lm=1",
+    "position": "Defensive Midfield",
+  },
+  {
+    "birthday": "2003-01-07",
+    "id": 668547,
+    "name": "Máximo Perrone",
+    "nationalities": [
+      "Argentina",
+      "Spain",
+    ],
+    "number": 32,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/668547-1658413558.JPG?lm=1",
+    "position": "Defensive Midfield",
+  },
+  {
+    "birthday": "1990-10-24",
+    "id": 53622,
+    "name": "Ilkay Gündogan",
+    "nationalities": [
+      "Germany",
+    ],
+    "number": 8,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/53622-1666733465.jpg?lm=1",
+    "position": "Central Midfield",
+  },
+  {
+    "birthday": "1991-06-28",
+    "id": 88755,
+    "name": "Kevin De Bruyne",
+    "nationalities": [
+      "Belgium",
+    ],
+    "number": 17,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/88755-1626449012.jpg?lm=1",
+    "position": "Attacking Midfield",
+  },
+  {
+    "birthday": "1994-08-10",
+    "id": 241641,
+    "name": "Bernardo Silva",
+    "nationalities": [
+      "Portugal",
+    ],
+    "number": 20,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/241641-1669364275.jpg?lm=1",
+    "position": "Attacking Midfield",
+  },
+  {
+    "birthday": "2002-05-06",
+    "id": 568177,
+    "name": "Cole Palmer",
+    "nationalities": [
+      "England",
+    ],
+    "number": 80,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/568177-1661441838.jpg?lm=1",
+    "position": "Attacking Midfield",
+  },
+  {
+    "birthday": "2000-05-28",
+    "id": 406635,
+    "name": "Phil Foden",
+    "nationalities": [
+      "England",
+    ],
+    "number": 47,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/406635-1668524492.jpg?lm=1",
+    "position": "Left Winger",
+  },
+  {
+    "birthday": "1995-09-10",
+    "id": 203460,
+    "name": "Jack Grealish",
+    "nationalities": [
+      "England",
+      "Ireland",
+    ],
+    "number": 10,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/203460-1676499047.jpg?lm=1",
+    "position": "Left Winger",
+  },
+  {
+    "birthday": "1991-02-21",
+    "id": 171424,
+    "name": "Riyad Mahrez",
+    "nationalities": [
+      "Algeria",
+      "France",
+    ],
+    "number": 26,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/171424-1461578220.jpg?lm=1",
+    "position": "Right Winger",
+  },
+  {
+    "birthday": "2000-07-21",
+    "id": 418560,
+    "name": "Erling Haaland",
+    "nationalities": [
+      "Norway",
+      "England",
+    ],
+    "number": 9,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/418560-1656179352.jpg?lm=1",
+    "position": "Centre-Forward",
+  },
+  {
+    "birthday": "2000-01-31",
+    "id": 576024,
+    "name": "Julián Álvarez",
+    "nationalities": [
+      "Argentina",
+    ],
+    "number": 19,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/big/576024-1661978290.jpg?lm=1",
+    "position": "Centre-Forward",
+  },
+]
+`;
+
+exports[`list player.list() -> [] 1`] = `[]`;
