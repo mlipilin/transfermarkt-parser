@@ -1,1 +1,0 @@
-# Transfermarkt Parser Demo

@@ -11,8 +11,9 @@
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
     "prepare": "husky install",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|ts|tsx|yml)\"",
-    "reinstall": "rm -rf node_modules package-lock.json packages/demo/node_modules packages/parser/node_modules && npm install --legacy-peer-deps",
-    "storybook": "lerna run storybook --scope demo",
+    "reinstall": "rm -rf node_modules package-lock.json packages/demo-server/node_modules packages/parser/node_modules && npm install",
+    "old:storybook": "lerna run storybook --scope demo",
+    "start": "node api/index.js",
     "test": "lerna run test --scope transfermarkt-parser"
   },
   "devDependencies": {
