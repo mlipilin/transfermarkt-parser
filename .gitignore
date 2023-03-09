@@ -10,6 +10,7 @@
 /build
 /common/*/build
 /packages/*/build
+/packages/*/dist
 
 # misc
 .DS_Store
