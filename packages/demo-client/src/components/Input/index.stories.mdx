@@ -1,0 +1,51 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import withState from 'hoc/with-state.tsx'
+
+import Input from './index'
+
+export const InputWithState = withState(Input)
+export const Template = (args) => <InputWithState {...args} />
+
+<Meta
+  title="Components/Input"
+  component={Input}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# Input
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story
+    name="0_0"
+    args={{
+      placeholder: 'Type your text here...',
+      type: 'text',
+      value: 'Some text',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Input with error
+
+<Canvas>
+  <Story
+    name="Error"
+    args={{
+      error: 'Some error text',
+      placeholder: 'Type your text here...',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable component={Input} />

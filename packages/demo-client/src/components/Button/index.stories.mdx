@@ -1,0 +1,61 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Button from './index'
+
+export const Template = (args) => <Button {...args} />
+
+<Meta
+  title="Components/Button"
+  component={Button}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# Button
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story name="0_0" args={{ children: 'Click me' }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Block button
+
+<Canvas>
+  <Story name="Block" args={{ children: 'Block button', block: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Disabled button
+
+<Canvas>
+  <Story name="Disabled" args={{ children: 'Disabled button', disabled: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Loading indicator
+
+<Canvas>
+  <Story name="Loading" args={{ children: 'Click me', isLoading: true }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="LoadingText"
+    args={{
+      children: 'Click me',
+      isLoading: true,
+      loadingText: 'Custom loading text...',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable component={Button} />
