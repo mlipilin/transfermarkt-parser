@@ -4,6 +4,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "homepage": "https://mlipilin.github.io/transfermarkt-parser/",
   "scripts": {
     "dev": "lerna run dev",
     "eslint": "eslint --ignore-path .gitignore .",
