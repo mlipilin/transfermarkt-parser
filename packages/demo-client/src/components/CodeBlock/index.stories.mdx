@@ -1,0 +1,36 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import CodeBlock from './index'
+
+export const Template = (args) => <CodeBlock {...args} />
+
+export const code = 'import { game } from "transfermarkt-parser"'
+
+<Meta
+  title="Components/CodeBlock"
+  component={CodeBlock}
+  parameters={{ controls: { sort: 'requiredFirst' } }}
+/>
+
+# CodeBlock
+
+## Examples
+
+Here are some examples of using the component.
+
+<Canvas>
+  <Story
+    name="0_0"
+    args={{
+      code: code,
+      language: 'javascript',
+      title: 'Usage',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable component={CodeBlock} />

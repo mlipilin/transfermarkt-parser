@@ -5,13 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "lerna run dev --scope demo-server",
+    "dev": "lerna run dev",
     "eslint": "eslint --ignore-path .gitignore .",
     "lint": "npm run prettier -- --check && npm run eslint",
     "lint:fix": "npm run prettier -- --write && npm run eslint -- --fix",
     "prepare": "husky install",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|ts|tsx|yml)\"",
-    "reinstall": "rm -rf node_modules package-lock.json packages/demo-server/node_modules packages/parser/node_modules && npm install",
+    "reinstall": "rm -rf node_modules package-lock.json packages/demo-client/node_modules packages/demo-server/node_modules packages/parser/node_modules && npm install",
     "old:storybook": "lerna run storybook --scope demo",
     "start": "node api/index.js",
     "test": "lerna run test --scope transfermarkt-parser"

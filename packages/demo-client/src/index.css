@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre {
+  border-radius: 6px;
+  padding: 1rem !important;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
