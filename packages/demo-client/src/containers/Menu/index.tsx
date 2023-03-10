@@ -5,13 +5,13 @@ import MenuItem from '../../components/MenuItem'
 import Page from '../../components/Page'
 
 const MENU_ITEMS = [
-  { to: '/', name: 'Country' },
-  { to: '/competition', name: 'Competition' },
-  { to: '/season', name: 'Season' },
-  { to: '/club', name: 'Club' },
-  { to: '/player', name: 'Player' },
-  { to: '/matchday', name: 'Matchday' },
-  { to: '/game', name: 'Game' },
+  { to: '/transfermarkt-parser/', name: 'Country' },
+  { to: '/transfermarkt-parser/competition', name: 'Competition' },
+  { to: '/transfermarkt-parser/season', name: 'Season' },
+  { to: '/transfermarkt-parser/club', name: 'Club' },
+  { to: '/transfermarkt-parser/player', name: 'Player' },
+  { to: '/transfermarkt-parser/matchday', name: 'Matchday' },
+  { to: '/transfermarkt-parser/game', name: 'Game' },
 ]
 
 export default function Menu() {

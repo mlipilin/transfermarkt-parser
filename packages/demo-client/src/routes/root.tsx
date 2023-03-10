@@ -4,13 +4,13 @@ import { Outlet, useLocation } from 'react-router-dom'
 import Layout from '../components/layout'
 
 const TITLE = {
-  '/': 'Country',
-  '/competition': 'Competition',
-  '/club': 'Club',
-  '/game': 'Game',
-  '/matchday': 'Matchday',
-  '/player': 'Player',
-  '/season': 'Season',
+  '/transfermarkt-parser/': 'Country',
+  '/transfermarkt-parser/competition': 'Competition',
+  '/transfermarkt-parser/club': 'Club',
+  '/transfermarkt-parser/game': 'Game',
+  '/transfermarkt-parser/matchday': 'Matchday',
+  '/transfermarkt-parser/player': 'Player',
+  '/transfermarkt-parser/season': 'Season',
 }
 
 export default function RouteRoot() {

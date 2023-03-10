@@ -22,14 +22,16 @@ const fetcher = (input: RequestInfo | URL, init?: RequestInit | undefined) =>
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RouteRoot />} errorElement={<Route404 />}>
-      <Route index element={<RouteCountry />} />
-      <Route path="club" element={<RouteClub />} />
-      <Route path="competition" element={<RouteCompetition />} />
-      <Route path="game" element={<RouteGame />} />
-      <Route path="matchday" element={<RouteMatchday />} />
-      <Route path="player" element={<RoutePlayer />} />
-      <Route path="season" element={<RouteSeason />} />
+    <Route path="/" errorElement={<Route404 />}>
+      <Route path="transfermarkt-parser" element={<RouteRoot />}>
+        <Route index element={<RouteCountry />} />
+        <Route path="club" element={<RouteClub />} />
+        <Route path="competition" element={<RouteCompetition />} />
+        <Route path="game" element={<RouteGame />} />
+        <Route path="matchday" element={<RouteMatchday />} />
+        <Route path="player" element={<RoutePlayer />} />
+        <Route path="season" element={<RouteSeason />} />
+      </Route>
     </Route>
   )
 )
