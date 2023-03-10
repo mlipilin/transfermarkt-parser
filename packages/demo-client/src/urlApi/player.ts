@@ -1,2 +1,4 @@
 export const list = (clubId: number, seasonId: string) =>
-  `/api/player/list?clubId=${clubId}&seasonId=${seasonId}`
+  `${
+    import.meta.env.VITE_API_HOST
+  }/player/list?clubId=${clubId}&seasonId=${seasonId}`
