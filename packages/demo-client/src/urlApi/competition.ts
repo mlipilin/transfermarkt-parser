@@ -1,2 +1,2 @@
 export const list = (countryId: number) =>
-  `/api/competition/list?countryId=${countryId}`
+  `${import.meta.env.VITE_API_HOST}/competition/list?countryId=${countryId}`

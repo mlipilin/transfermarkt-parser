@@ -1,1 +1,1 @@
-export const list = () => '/api/country/list'
+export const list = () => `${import.meta.env.VITE_API_HOST}/country/list`
