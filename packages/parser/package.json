@@ -1,12 +1,12 @@
 {
   "name": "transfermarkt-parser",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A small tool for parsing https://www.transfermarkt.com",
   "main": "build/index.js",
   "scripts": {
     "build": "rm -rf build && tsc",
     "check-types": "tsc --noEmit",
-    "copy-files": "cp package.json build/package.json && cp ../../LICENSE build/LICENSE && cp ../../README.md build/README.md",
+    "copy-files": "cp ../../LICENSE LICENSE && cp ../../README.md README.md",
     "debug": "ts-node src/_debug.ts",
     "release": "npm run build && npm run copy-files && npm publish",
     "test": "JEST_ASYNC_TIMEOUT=30000 TRANSFERMARKT_DDOS_TIMEOUT=5000 jest"
@@ -19,9 +19,6 @@
     "transfermarkt",
     "parser",
     "data"
-  ],
-  "files": [
-    "build"
   ],
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
   "license": "MIT",
