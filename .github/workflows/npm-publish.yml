@@ -28,6 +28,6 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm run release
+      - run: npx lerna run release --scope transfermarkt-parser
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
