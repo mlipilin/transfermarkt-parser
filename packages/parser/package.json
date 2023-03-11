@@ -6,10 +6,9 @@
   "scripts": {
     "build": "rm -rf build && tsc",
     "check-types": "tsc --noEmit",
-    "copy-files": "cp package.json build/package.json && cp LICENSE build/LICENSE && cp readme.md build/readme.md",
+    "copy-files": "cp package.json build/package.json && cp ../../LICENSE build/LICENSE && cp ../../README.md build/README.md",
     "debug": "ts-node src/_debug.ts",
-    "release1": "npm run build && npm run copy-files && npm publish build",
-    "release": "npm run build && npm run copy-files",
+    "release": "npm run build && npm run copy-files && npm publish build",
     "test": "JEST_ASYNC_TIMEOUT=30000 TRANSFERMARKT_DDOS_TIMEOUT=5000 jest"
   },
   "repository": {
