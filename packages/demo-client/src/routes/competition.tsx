@@ -10,7 +10,7 @@ import Page from '../components/Page'
 import Select, { Value as SelectValue } from '../components/Select'
 
 // Types
-// import { Country as CountryType } from 'transfermarkt-parser'
+// import { Country as CountryType } from '@mlipilin/transfermarkt-parser'
 import { Country as CountryType } from '../types'
 
 // URL API

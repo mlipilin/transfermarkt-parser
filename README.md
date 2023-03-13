@@ -21,7 +21,7 @@ yarn add transfermarkt-parser
 ## Usage
 
 ```javascript
-import { country } from 'transfermarkt-parser'
+import { country } from '@mlipilin/transfermarkt-parser'
 
 const countries = await country.list()
 ```
@@ -31,7 +31,7 @@ const countries = await country.list()
 ### Country
 
 ```javascript
-import { country } from 'transfermarkt-parser'
+import { country } from '@mlipilin/transfermarkt-parser'
 
 // Get all countries
 const countries = await country.list()
@@ -59,7 +59,7 @@ const countries = await country.list()
 ### Competition
 
 ```javascript
-import { competition } from 'transfermarkt-parser'
+import { competition } from '@mlipilin/transfermarkt-parser'
 
 // Get all available competitions for England
 const competitions = await competition.list(189)
@@ -90,7 +90,7 @@ const competitions = await competition.list(189)
 ### Season
 
 ```javascript
-import { season } from 'transfermarkt-parser'
+import { season } from '@mlipilin/transfermarkt-parser'
 
 // Get all available seasons for English Premier League
 const seasons = await season.list('GB1')
@@ -118,7 +118,7 @@ const seasons = await season.list('GB1')
 ### Club
 
 ```javascript
-import { club } from 'transfermarkt-parser'
+import { club } from '@mlipilin/transfermarkt-parser'
 
 // Get all clubs for English Premier League (season 22/23)
 const clubs = await club.list('GB1', '2022')
@@ -146,7 +146,7 @@ const clubs = await club.list('GB1', '2022')
 ### Matchday
 
 ```javascript
-import { matchday } from 'transfermarkt-parser'
+import { matchday } from '@mlipilin/transfermarkt-parser'
 
 // Get all matchdays for English Premier League (season 22/23)
 const matchdays = await matchday.list('GB1', '2022')
@@ -177,7 +177,7 @@ const matchdays = await matchday.list('GB1', '2022')
 ### Game
 
 ```javascript
-import { game } from 'transfermarkt-parser'
+import { game } from '@mlipilin/transfermarkt-parser'
 
 // Get all games for Matchday 1 of English Premier League (season 22/23)
 const games = await game.list('GB1', '2022', 1)
@@ -220,7 +220,7 @@ const games = await game.list('GB1', '2022', 1)
 ### Player
 
 ```javascript
-import { player } from 'transfermarkt-parser'
+import { player } from '@mlipilin/transfermarkt-parser'
 
 // Get all players for Manchester City (season 22/23)
 const players = await player.list(281, '2022')

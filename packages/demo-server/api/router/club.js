@@ -1,6 +1,6 @@
 const express = require('express')
 
-const { club } = require('transfermarkt-parser')
+const { club } = require('@mlipilin/transfermarkt-parser')
 
 const router = express.Router()
 

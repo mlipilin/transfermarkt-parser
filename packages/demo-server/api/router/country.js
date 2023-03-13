@@ -1,6 +1,6 @@
 const express = require('express')
 
-const { country } = require('transfermarkt-parser')
+const { country } = require('@mlipilin/transfermarkt-parser')
 
 const router = express.Router()
 
