@@ -15,7 +15,7 @@ import Page from '../components/Page'
 //   Competition as CompetitionType,
 //   Matchday as MatchdayType,
 //   Season as SeasonType,
-// } from 'transfermarkt-parser'
+// } from '@mlipilin/transfermarkt-parser'
 import {
   Country as CountryType,
   Competition as CompetitionType,

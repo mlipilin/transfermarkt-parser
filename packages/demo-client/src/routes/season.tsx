@@ -13,7 +13,7 @@ import Page from '../components/Page'
 // import {
 //   Country as CountryType,
 //   Competition as CompetitionType,
-// } from 'transfermarkt-parser'
+// } from '@mlipilin/transfermarkt-parser'
 import {
   Country as CountryType,
   Competition as CompetitionType,
