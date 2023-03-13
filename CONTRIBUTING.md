@@ -7,6 +7,7 @@ Up package version, add a tag:
 ```bash
 git checkout main
 git pull
+npx lerna version --no-private
 npx lerna run release --scope transfermarkt-parser
 ```
 
