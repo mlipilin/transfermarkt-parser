@@ -8,7 +8,6 @@ Up package version, add a tag:
 git checkout main
 git pull
 npx lerna version --no-private
-npx lerna run release --scope transfermarkt-parser
 ```
 
 Than create a release for the tag via GitHub interface.
