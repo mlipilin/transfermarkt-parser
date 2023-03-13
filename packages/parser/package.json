@@ -9,7 +9,7 @@
     "copy-files": "cp package.json build/package.json && cp ../../LICENSE build/LICENSE && cp ../../README.md build/README.md",
     "debug": "ts-node src/_debug.ts",
     "prepare-package": "node prepare.js",
-    "release": "npm run build && npm run copy-files && npm run prepare-package && npm publish",
+    "release": "npm run build && npm run copy-files && npm run prepare-package && cd build && npm publish",
     "test": "JEST_ASYNC_TIMEOUT=30000 TRANSFERMARKT_DDOS_TIMEOUT=5000 jest"
   },
   "repository": {
@@ -20,9 +20,6 @@
     "transfermarkt",
     "parser",
     "data"
-  ],
-  "files": [
-    "build"
   ],
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
   "license": "MIT",
