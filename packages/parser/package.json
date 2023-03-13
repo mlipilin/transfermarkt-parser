@@ -1,6 +1,6 @@
 {
   "name": "@mlipilin/transfermarkt-parser",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A small tool for parsing https://www.transfermarkt.com",
   "main": "build/index.js",
   "scripts": {
