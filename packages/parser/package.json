@@ -21,9 +21,6 @@
     "parser",
     "data"
   ],
-  "files": [
-    "build"
-  ],
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
   "license": "MIT",
   "bugs": {
