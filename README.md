@@ -1,4 +1,4 @@
-# Transfermarkt Parser
+# Transfermarkt Parser &middot; [![npm version](https://img.shields.io/npm/v/transfermarkt-parser.svg?style=flat)](https://www.npmjs.com/package/transfermarkt-parser)
 
 Set of javascript parsers for https://www.transfermarkt.com website.
 
